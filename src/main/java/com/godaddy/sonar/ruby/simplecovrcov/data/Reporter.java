@@ -21,4 +21,12 @@ public class Reporter {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void addItem(ReporterItem reporterItem) {
+        this.items.add(reporterItem);
+    }
+
+    public Collection<ReporterItem> getItems() {
+        return items;
+    }
 }
