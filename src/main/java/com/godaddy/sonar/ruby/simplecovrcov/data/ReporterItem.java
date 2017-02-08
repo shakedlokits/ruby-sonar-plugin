@@ -8,13 +8,13 @@ import java.util.Collection;
  */
 public class ReporterItem {
     private String filename;
-    private Collection<Object> marks;
+    private Collection<Mark> marks;
 
     public ReporterItem(String filename) {
         new ReporterItem(filename, new ArrayList<>());
     }
 
-    public ReporterItem(String filename, Collection<Object> marks) {
+    public ReporterItem(String filename, Collection<Mark> marks) {
         this.filename = filename;
         this.marks = marks;
     }
@@ -27,7 +27,7 @@ public class ReporterItem {
         this.filename = filename;
     }
 
-    public Collection<Object> getMarks() {
+    public Collection<Mark> getMarks() {
         return marks;
     }
 }

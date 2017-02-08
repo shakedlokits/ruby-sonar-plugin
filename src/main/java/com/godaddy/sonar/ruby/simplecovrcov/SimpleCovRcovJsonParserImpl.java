@@ -1,6 +1,7 @@
 package com.godaddy.sonar.ruby.simplecovrcov;
 
 import com.godaddy.sonar.ruby.simplecovrcov.data.CoverageReport;
+import com.godaddy.sonar.ruby.simplecovrcov.data.Mark;
 import com.godaddy.sonar.ruby.simplecovrcov.data.Reporter;
 import com.godaddy.sonar.ruby.simplecovrcov.data.ReporterItem;
 import com.google.common.collect.Maps;
@@ -100,9 +101,9 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
     private ReporterItem buildReporterItem(Map.Entry reporterItemMapEntry) {
         String filename = reporterItemMapEntry.getKey().toString();
         JsonArray marksJsonArr = ((JsonArray)reporterItemMapEntry.getValue());
-        Collection<Object> marks = new ArrayList<>();
+        Collection<Mark> marks = new ArrayList<>();
         for(JsonElement marksEl : marksJsonArr) {
-            marks.add(marksEl.toString());
+            marks.add(new Mark(marksEl.toString(), marksEl.isJsonNull()));
         }
         return new ReporterItem(filename, marks);
     }
