@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import javafx.util.Pair;
 import org.apache.commons.io.FileUtils;
 import org.sonar.api.measures.CoverageMeasuresBuilder;
 import org.sonar.api.utils.log.Logger;
@@ -19,13 +20,18 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
     public Map<String, CoverageMeasuresBuilder> parse(File file) throws IOException {
         Map<String, CoverageMeasuresBuilder> coveredFiles = Maps.newHashMap();
 
-        File fileToFindCoverage = file;
-
-        String fileString = FileUtils.readFileToString(fileToFindCoverage, "UTF-8");
+        String fileString = FileUtils.readFileToString(file, "UTF-8");
 
         JsonParser parser = new JsonParser();
         JsonObject resultJsonObject = parser.parse(fileString).getAsJsonObject();
-        JsonObject coverageJsonObj = resultJsonObject.get("MiniTest").getAsJsonObject().get("coverage").getAsJsonObject();
+
+        String coverageRootNode = "";
+        if(resultJsonObject.get("RSpec") != null) { coverageRootNode = "RSpec"; }
+        if(resultJsonObject.get("MiniTest") != null) { coverageRootNode = "MiniTest"; }
+
+        if(coverageRootNode.equals("")) { return coveredFiles; }
+
+        JsonObject coverageJsonObj = resultJsonObject.get(coverageRootNode).getAsJsonObject().get("coverage").getAsJsonObject();
 
         // for each file in the coverage report
         for (int j = 0; j < coverageJsonObj.entrySet().size(); j++) {
