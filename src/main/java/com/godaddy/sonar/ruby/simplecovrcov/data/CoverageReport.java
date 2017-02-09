@@ -14,4 +14,14 @@ public class CoverageReport {
     public Collection<Reporter> getReporters() {
         return reporters;
     }
+
+    public Boolean hasSeveralReporters() { return this.reporters.size() > 1; }
+
+    public Reporter getFirstReporter() {
+        if (getReporters().size() > 0) {
+            return (Reporter)getReporters().toArray()[0];
+        } else {
+            return new Reporter("null");
+        }
+    }
 }
