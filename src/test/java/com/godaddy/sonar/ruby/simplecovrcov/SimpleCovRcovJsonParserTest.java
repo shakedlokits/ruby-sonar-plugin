@@ -11,8 +11,7 @@ import java.io.IOException;
 import java.util.Map;
 
 public class SimpleCovRcovJsonParserTest extends TestCase {
-    private final static String VALID_JSON_FILE_NAME = "src/test/resources/test-data/valid_simple_cov_results.json";
-    private final static String INVALID_JSON_FILE_NAME = "src/test/resources/test-data/invalid_simple_cov_results.json";
+    private final static String VALID_JSON_FILE_NAME = "src/test/resources/test-data/simple_cov_results.json";
 
     private SimpleCovRcovJsonParserImpl parser = null;
 
@@ -43,13 +42,4 @@ public class SimpleCovRcovJsonParserTest extends TestCase {
         CoverageMeasuresBuilder builder = coveredFiles.get(coveredFile1);
         assertEquals(builder.getCoveredLines(), 13);
     }
-
-    @Test
-    public void testParserWithInValidJson() throws IOException {
-        File reportFile = new File(INVALID_JSON_FILE_NAME);
-        Map<String, CoverageMeasuresBuilder> coveredFiles = parser.parse(reportFile);
-
-        assertEquals(coveredFiles.size(), 0);
-    }
-
 }
