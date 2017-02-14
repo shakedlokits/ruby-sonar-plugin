@@ -24,7 +24,6 @@ public class RubyFileTest {
     @Before
     public void setUp() {
         Project project = new Project("test project");
-        project.setLanguage(LanguageRuby.INSTANCE);
 
         File file = new File(SOURCE_FILE);
         List<InputFile> sourceDirs = new ArrayList<InputFile>();
@@ -87,7 +86,7 @@ public class RubyFileTest {
 
     @Test
     public void testGetQualifier() {
-        assertEquals(Qualifiers.CLASS, rubyFile.getQualifier());
+        assertEquals(Qualifiers.FILE, rubyFile.getQualifier());
     }
 
     @Test

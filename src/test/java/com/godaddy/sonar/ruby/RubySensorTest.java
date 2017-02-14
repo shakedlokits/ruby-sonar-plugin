@@ -12,10 +12,13 @@ import org.sonar.api.batch.fs.FilePredicates;
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.fs.internal.DefaultInputFile;
+import org.sonar.api.config.MapSettings;
 import org.sonar.api.config.Settings;
 import org.sonar.api.measures.Measure;
 import org.sonar.api.measures.Metric;
 import org.sonar.api.resources.Project;
+import org.sonar.batch.bootstrap.GlobalSettings;
+import org.sonar.batch.scan.ProjectSettings;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
@@ -50,8 +53,7 @@ public class RubySensorTest {
         filePredicate = mocksControl.createMock(FilePredicate.class);
 
         project = new Project("test project");
-        settings = new Settings();
-        project.setLanguage(LanguageRuby.INSTANCE);
+        settings = new MapSettings();
 
         sensorContext = mocksControl.createMock(SensorContext.class);
 
