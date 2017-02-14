@@ -1,6 +1,5 @@
 package com.godaddy.sonar.ruby;
 
-import com.godaddy.sonar.ruby.core.LanguageRuby;
 import org.easymock.EasyMock;
 import org.easymock.IMocksControl;
 import org.junit.After;
@@ -17,8 +16,6 @@ import org.sonar.api.config.Settings;
 import org.sonar.api.measures.Measure;
 import org.sonar.api.measures.Metric;
 import org.sonar.api.resources.Project;
-import org.sonar.batch.bootstrap.GlobalSettings;
-import org.sonar.batch.scan.ProjectSettings;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
