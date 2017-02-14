@@ -88,7 +88,7 @@ public class RubyFile extends Resource {
     }
 
     public String getQualifier() {
-        return Qualifiers.CLASS;
+        return Qualifiers.FILE;
     }
 
     public boolean matchFilePattern(String antPattern) {
