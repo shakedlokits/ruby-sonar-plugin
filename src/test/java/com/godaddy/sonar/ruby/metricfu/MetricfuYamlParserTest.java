@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.batch.fs.internal.DefaultFileSystem;
+import org.sonar.api.config.MapSettings;
 import org.sonar.api.config.Settings;
 import org.sonar.api.internal.apachecommons.lang.reflect.FieldUtils;
 import org.sonar.api.resources.Project;
@@ -34,8 +35,7 @@ public class MetricfuYamlParserTest {
     public void setUp() throws Exception {
         fs = new DefaultFileSystem(new File("./src/test/resources/test-data"));
         project = new Project("test project");
-        project.setLanguage(LanguageRuby.INSTANCE);
-        settings = new Settings();
+        settings = new MapSettings();
     }
 
     @Test

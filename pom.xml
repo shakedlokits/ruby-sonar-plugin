@@ -6,14 +6,14 @@
 	<groupId>com.godaddy.sonar</groupId>
 	<artifactId>sonar-ruby-plugin</artifactId>
 	<packaging>sonar-plugin</packaging>
-	<version>1.4.0</version>
+	<version>1.5.0</version>
 
 	<name>Sonar Ruby Plugin</name>
 	<description>Plugin to report ruby code coverage into sonar</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonar.buildVersion>5.5</sonar.buildVersion>
+		<sonar.buildVersion>6.2</sonar.buildVersion>
         <!--FIXME: update batch version to build version once available-->
         <sonar.sonarBatchVersion>5.4</sonar.sonarBatchVersion>
 		<jdk.min.version>1.6</jdk.min.version>
@@ -34,29 +34,14 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.sonarsource.sonarqube</groupId>
-			<artifactId>sonar-batch</artifactId>
-			<version>${sonar.sonarBatchVersion}</version>
-            <!--FIXME:HACK: using exclusion pattens to resolve this https://groups.google.com/forum/#!msg/sonarqube/R8jk9MK9bGI/gOn5uhk9GgAJ-->
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>commons-lang</groupId>
-                    <artifactId>commons-lang</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>commons-io</groupId>
-                    <artifactId>commons-io</artifactId>
-                </exclusion>
-            </exclusions>
-		</dependency>
-		<dependency>
 			<groupId>org.jruby</groupId>
 			<artifactId>jruby-complete</artifactId>
 			<version>1.7.20</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.0</version>
 		</dependency>
         <dependency>
             <groupId>org.sonarsource.sslr-squid-bridge</groupId>

@@ -11,6 +11,7 @@ import org.sonar.api.batch.fs.internal.FileMetadata;
 import org.sonar.api.batch.sensor.internal.DefaultSensorDescriptor;
 import org.sonar.api.batch.sensor.internal.SensorContextTester;
 import org.sonar.api.batch.sensor.issue.Issue;
+import org.sonar.api.config.MapSettings;
 import org.sonar.api.config.Settings;
 import org.sonar.api.utils.log.LogTester;
 import org.sonar.api.utils.log.LoggerLevel;
@@ -46,7 +47,7 @@ public class MetricfuIssueSensorTest {
 
         // set mock project setting, default analysis
         // data(cane) and metricfu report address
-        settings = new Settings();
+        settings = new MapSettings();
         settings.setProperty(RubyPlugin.METRICFU_COMPLEXITY_METRIC_PROPERTY, "cane");
         settings.setProperty(RubyPlugin.METRICFU_REPORT_PATH_PROPERTY, YML_SYNTAX_FILE_NAME);
 
