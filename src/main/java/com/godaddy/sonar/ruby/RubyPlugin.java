@@ -4,6 +4,7 @@ import com.godaddy.sonar.ruby.core.Ruby;
 import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
+import com.godaddy.sonar.ruby.rubocop.CopsRulesDefinition;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
 import org.sonar.api.CoreProperties;
@@ -31,6 +32,9 @@ public final class RubyPlugin extends SonarPlugin {
     public static final String KEY_REPOSITORY_ROODI = "roodi";
     public static final String NAME_REPOSITORY_ROODI = "Roodi";
 
+    public static final String KEY_REPOSITORY_RUBOCOP = "rubocop";
+    public static final String NAME_REPOSITORY_RUBOCOP = "Rubocop";
+
     public static final String SIMPLECOVRCOV_REPORT_PATH_PROPERTY = "sonar.simplecovrcov.reportPath";
     public static final String METRICFU_REPORT_PATH_PROPERTY = "sonar.metricfu.reportPath";
     public static final String METRICFU_COMPLEXITY_METRIC_PROPERTY = "sonar.metricfu.complexityMetric";
@@ -53,6 +57,7 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(CaneRulesDefinition.class);
         extensions.add(ReekRulesDefinition.class);
         extensions.add(RoodiRulesDefinition.class);
+        extensions.add(CopsRulesDefinition.class);
 
 
         // Profiles
