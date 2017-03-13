@@ -23,6 +23,7 @@ public class DefaultReportJsonParser implements ReportJsonParser {
 
     @Override
     public Report parse(java.io.File file) throws IOException {
+        LOG.info("Starting parsing Rubocop report JSON file.");
         String fileString = FileUtils.readFileToString(file, "UTF-8");
         JsonParser parser = new JsonParser();
         JsonObject resultJsonObject = parser.parse(fileString).getAsJsonObject();
@@ -30,6 +31,7 @@ public class DefaultReportJsonParser implements ReportJsonParser {
     }
 
     private Report parseJsonReport(JsonObject jsonObject) {
+        LOG.info("parseJsonReport called");
         Report report = new Report();
         JsonObject metadataJsonObject = jsonObject.getAsJsonObject("metadata");
         report.setMetadata(parseMetadata(metadataJsonObject));
@@ -39,6 +41,7 @@ public class DefaultReportJsonParser implements ReportJsonParser {
     }
 
     private Metadata parseMetadata(JsonObject jsonObject) {
+        LOG.info("parseMetadata called");
         Metadata metadata = new Metadata();
         metadata.setRubocopVersion(jsonObject.get("rubocop_version").getAsString());
         metadata.setRubyEngine(jsonObject.get("ruby_engine").getAsString());
@@ -49,6 +52,7 @@ public class DefaultReportJsonParser implements ReportJsonParser {
     }
 
     private List<File> parseFiles(JsonArray jsonArray) {
+        LOG.info("parseFiles called. There are " + jsonArray.size() + " files in the report.");
         List<File> files = new ArrayList<>();
         for (JsonElement fileJsonElement : jsonArray) {
             files.add(parseFile((JsonObject)fileJsonElement));
@@ -61,6 +65,7 @@ public class DefaultReportJsonParser implements ReportJsonParser {
         File file = new File();
         file.setPath(jsonObject.get("path").getAsString());
         file.setOffenses(parseOffenses(offensesJsonArray));
+        LOG.info("Parsed information for " + file.getPath());
         return file;
     }
 

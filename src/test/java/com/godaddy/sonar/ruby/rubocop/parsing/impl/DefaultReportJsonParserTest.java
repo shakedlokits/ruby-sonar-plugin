@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  * Created by sergio on 3/13/17.
  */
 public class DefaultReportJsonParserTest {
-    private final static String JSON_FILE_NAME = "src/test/resources/test-data/rubocop-report-valid.json";
+    private final static String JSON_FILE_NAME = "src/test/resources/test-data/rubocop/rubocop-report-valid.json";
 
     private ReportJsonParser parser = null;
 
