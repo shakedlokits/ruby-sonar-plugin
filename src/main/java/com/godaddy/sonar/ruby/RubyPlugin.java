@@ -35,6 +35,8 @@ public final class RubyPlugin extends SonarPlugin {
     public static final String METRICFU_REPORT_PATH_PROPERTY = "sonar.metricfu.reportPath";
     public static final String METRICFU_COMPLEXITY_METRIC_PROPERTY = "sonar.metricfu.complexityMetric";
 
+    public static final String RUBOCOP_REPORT_PATH_PROPERTY = "sonar.rubocop.reportPath";
+
     public List<Object> getExtensions() {
         List<Object> extensions = new ArrayList<Object>();
         extensions.add(Ruby.class);
@@ -75,6 +77,16 @@ public final class RubyPlugin extends SonarPlugin {
                 .onQualifiers(Qualifiers.PROJECT)
                 .build();
         extensions.add(simplecovrcovReportPath);
+
+        PropertyDefinition rubocopReportPathProperty = PropertyDefinition.builder(RUBOCOP_REPORT_PATH_PROPERTY)
+                .category(CoreProperties.CATEGORY_CODE_COVERAGE)
+                .subCategory("Ruby Coverage")
+                .name("Rubocop Report path")
+                .description("Path (absolute or relative) to Rubocop json report file.")
+                .defaultValue("tmp/rubocop/report.json")
+                .onQualifiers(Qualifiers.PROJECT)
+                .build();
+        extensions.add(rubocopReportPathProperty);
 
         List<String> options = Arrays.asList("Saikuro", "Cane");
 
