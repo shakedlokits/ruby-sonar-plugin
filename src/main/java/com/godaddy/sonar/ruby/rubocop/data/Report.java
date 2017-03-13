@@ -1,6 +1,8 @@
 package com.godaddy.sonar.ruby.rubocop.data;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 
 /**
  * Created by sergio on 3/13/17.
@@ -23,5 +25,10 @@ public class Report {
 
     public void setFiles(List<File> files) {
         this.files = files;
+    }
+
+    public File getFileInfoByPath(String path) {
+        Optional<File> fileOptional = files.stream().filter((fileData) -> fileData.getPath().equals(path)).findFirst();
+        return fileOptional.orElse(null);
     }
 }
