@@ -5,6 +5,8 @@ import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
 import com.godaddy.sonar.ruby.rubocop.CopsRulesDefinition;
+import com.godaddy.sonar.ruby.rubocop.RubocopSensor;
+import com.godaddy.sonar.ruby.rubocop.parsing.impl.DefaultReportJsonParser;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
 import org.sonar.api.CoreProperties;
@@ -49,6 +51,8 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(SimpleCovRcovSensor.class);
         extensions.add(SimpleCovRcovJsonParserImpl.class);
         extensions.add(MetricfuYamlParser.class);
+        extensions.add(RubocopSensor.class);
+        extensions.add(DefaultReportJsonParser.class);
         extensions.add(RubySourceCodeColorizer.class);
         extensions.add(RubySensor.class);
         extensions.add(MetricfuComplexitySensor.class);
