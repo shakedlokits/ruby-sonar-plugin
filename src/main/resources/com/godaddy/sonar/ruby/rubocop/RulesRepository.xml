@@ -5,7 +5,7 @@
         <name><![CDATA[Check indentation of private/protected visibility modifiers.]]></name>
         <description><![CDATA[Check indentation of private/protected visibility modifiers.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -14,7 +14,7 @@
         <name><![CDATA[Check the naming of accessor methods for get_/set_.]]></name>
         <description><![CDATA[Check the naming of accessor methods for get_/set_.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -23,7 +23,7 @@
         <name><![CDATA[Use alias instead of alias_method.]]></name>
         <description><![CDATA[Use alias instead of alias_method.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -32,7 +32,7 @@
         <name><![CDATA[Align the elements of an array literal if they span more than one line.]]></name>
         <description><![CDATA[Align the elements of an array literal if they span more than one line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -41,7 +41,7 @@
         <name><![CDATA[Align the elements of a hash literal if they span more than one line.]]></name>
         <description><![CDATA[Align the elements of a hash literal if they span more than one line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -50,7 +50,7 @@
         <name><![CDATA[Align the parameters of a method call if they span more than one line.]]></name>
         <description><![CDATA[Align the parameters of a method call if they span more than one line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -59,7 +59,7 @@
         <name><![CDATA[Use &&/|| instead of and/or.]]></name>
         <description><![CDATA[Use &&/|| instead of and/or.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -68,7 +68,7 @@
         <name><![CDATA[Use Array#join instead of Array#*.]]></name>
         <description><![CDATA[Use Array#join instead of Array#*.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -77,7 +77,7 @@
         <name><![CDATA[Use only ascii symbols in comments.]]></name>
         <description><![CDATA[Use only ascii symbols in comments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -86,7 +86,7 @@
         <name><![CDATA[Use only ascii symbols in identifiers.]]></name>
         <description><![CDATA[Use only ascii symbols in identifiers.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -95,7 +95,7 @@
         <name><![CDATA[Checks for uses of Module#attr.]]></name>
         <description><![CDATA[Checks for uses of Module#attr.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -104,7 +104,7 @@
         <name><![CDATA[Avoid the use of BEGIN blocks.]]></name>
         <description><![CDATA[Avoid the use of BEGIN blocks.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -113,7 +113,7 @@
         <name><![CDATA[Checks if usage of %() or %Q() matches configuration.]]></name>
         <description><![CDATA[Checks if usage of %() or %Q() matches configuration.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -122,7 +122,7 @@
         <name><![CDATA[Do not use block comments.]]></name>
         <description><![CDATA[Do not use block comments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -131,7 +131,7 @@
         <name><![CDATA[Put end statement of multiline block on its own line.]]></name>
         <description><![CDATA[Put end statement of multiline block on its own line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -140,7 +140,7 @@
         <name><![CDATA[Avoid using {...} for multi-line blocks (multiline chaining is always ugly). Prefer {...} over do...end for single-line blocks.]]></name>
         <description><![CDATA[Avoid using {...} for multi-line blocks (multiline chaining is always ugly). Prefer {...} over do...end for single-line blocks.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -149,7 +149,7 @@
         <name><![CDATA[Enforce braces style around hash parameters.]]></name>
         <description><![CDATA[Enforce braces style around hash parameters.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -158,7 +158,7 @@
         <name><![CDATA[Avoid explicit use of the case equality operator(===).]]></name>
         <description><![CDATA[Avoid explicit use of the case equality operator(===).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -167,7 +167,7 @@
         <name><![CDATA[Indentation of when in a case/when/[else/]end.]]></name>
         <description><![CDATA[Indentation of when in a case/when/[else/]end.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -176,7 +176,7 @@
         <name><![CDATA[Checks for uses of character literals.]]></name>
         <description><![CDATA[Checks for uses of character literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -185,7 +185,7 @@
         <name><![CDATA[Use CamelCase for classes and modules.]]></name>
         <description><![CDATA[Use CamelCase for classes and modules.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -194,7 +194,7 @@
         <name><![CDATA[Checks style of children classes and modules.]]></name>
         <description><![CDATA[Checks style of children classes and modules.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -203,7 +203,7 @@
         <name><![CDATA[Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.]]></name>
         <description><![CDATA[Enforces consistent use of `Object#is_a?` or `Object#kind_of?`.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -212,7 +212,7 @@
         <name><![CDATA[Use self when defining module/class methods.]]></name>
         <description><![CDATA[Use self when defining module/class methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -221,7 +221,7 @@
         <name><![CDATA[Avoid the use of class variables.]]></name>
         <description><![CDATA[Avoid the use of class variables.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -230,7 +230,7 @@
         <name><![CDATA[Checks the indentation of hanging closing parentheses.]]></name>
         <description><![CDATA[Checks the indentation of hanging closing parentheses.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -239,7 +239,7 @@
         <name><![CDATA[Do not use :: for method call.]]></name>
         <description><![CDATA[Do not use :: for method call.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -248,7 +248,7 @@
         <name><![CDATA[Use `` or %x around command literals.]]></name>
         <description><![CDATA[Use `` or %x around command literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -257,7 +257,7 @@
         <name><![CDATA[Checks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, REVIEW).]]></name>
         <description><![CDATA[Checks formatting of special comments (TODO, FIXME, OPTIMIZE, HACK, REVIEW).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -266,7 +266,7 @@
         <name><![CDATA[Indentation of comments.]]></name>
         <description><![CDATA[Indentation of comments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -275,7 +275,7 @@
         <name><![CDATA[Use the return value of `if` and `case` statements for assignment to a variable and variable comparison instead of assigning that variable inside of each branch.]]></name>
         <description><![CDATA[Use the return value of `if` and `case` statements for assignment to a variable and variable comparison instead of assigning that variable inside of each branch.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -284,7 +284,7 @@
         <name><![CDATA[Constants should use SCREAMING_SNAKE_CASE.]]></name>
         <description><![CDATA[Constants should use SCREAMING_SNAKE_CASE.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -293,7 +293,7 @@
         <name><![CDATA[Use def with parentheses when there are arguments.]]></name>
         <description><![CDATA[Use def with parentheses when there are arguments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -302,7 +302,7 @@
         <name><![CDATA[Document classes and non-namespace modules.]]></name>
         <description><![CDATA[Document classes and non-namespace modules.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -311,7 +311,7 @@
         <name><![CDATA[Checks the position of the dot in multi-line method calls.]]></name>
         <description><![CDATA[Checks the position of the dot in multi-line method calls.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -320,7 +320,7 @@
         <name><![CDATA[Checks for uses of double negation (!!).]]></name>
         <description><![CDATA[Checks for uses of double negation (!!).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -329,7 +329,7 @@
         <name><![CDATA[Use `Integer#times` for a simple loop which iterates a fixed number of times.]]></name>
         <description><![CDATA[Use `Integer#times` for a simple loop which iterates a fixed number of times.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -338,7 +338,7 @@
         <name><![CDATA[Prefer `each_with_object` over `inject` or `reduce`.]]></name>
         <description><![CDATA[Prefer `each_with_object` over `inject` or `reduce`.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -347,7 +347,7 @@
         <name><![CDATA[Align elses and elsifs correctly.]]></name>
         <description><![CDATA[Align elses and elsifs correctly.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -356,7 +356,7 @@
         <name><![CDATA[Avoid empty else-clauses.]]></name>
         <description><![CDATA[Avoid empty else-clauses.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -365,7 +365,7 @@
         <name><![CDATA[Avoid empty condition in case statements.]]></name>
         <description><![CDATA[Avoid empty condition in case statements.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -374,7 +374,7 @@
         <name><![CDATA[Use empty lines between defs.]]></name>
         <description><![CDATA[Use empty lines between defs.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -383,7 +383,7 @@
         <name><![CDATA[Don't use several empty lines in a row.]]></name>
         <description><![CDATA[Don't use several empty lines in a row.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -392,7 +392,7 @@
         <name><![CDATA[Keep blank lines around access modifiers.]]></name>
         <description><![CDATA[Keep blank lines around access modifiers.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -401,7 +401,7 @@
         <name><![CDATA[Keeps track of empty lines around begin-end bodies.]]></name>
         <description><![CDATA[Keeps track of empty lines around begin-end bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -410,7 +410,7 @@
         <name><![CDATA[Keeps track of empty lines around block bodies.]]></name>
         <description><![CDATA[Keeps track of empty lines around block bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -419,7 +419,7 @@
         <name><![CDATA[Keeps track of empty lines around class bodies.]]></name>
         <description><![CDATA[Keeps track of empty lines around class bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -428,7 +428,7 @@
         <name><![CDATA[Keeps track of empty lines around exception handling keywords.]]></name>
         <description><![CDATA[Keeps track of empty lines around exception handling keywords.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -437,7 +437,7 @@
         <name><![CDATA[Keeps track of empty lines around module bodies.]]></name>
         <description><![CDATA[Keeps track of empty lines around module bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -446,7 +446,7 @@
         <name><![CDATA[Keeps track of empty lines around method bodies.]]></name>
         <description><![CDATA[Keeps track of empty lines around method bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -455,7 +455,7 @@
         <name><![CDATA[Prefer literals to Array.new/Hash.new/String.new.]]></name>
         <description><![CDATA[Prefer literals to Array.new/Hash.new/String.new.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -464,7 +464,7 @@
         <name><![CDATA[Checks the formatting of empty method definitions.]]></name>
         <description><![CDATA[Checks the formatting of empty method definitions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -473,7 +473,7 @@
         <name><![CDATA[Avoid the use of END blocks.]]></name>
         <description><![CDATA[Avoid the use of END blocks.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -482,7 +482,7 @@
         <name><![CDATA[Use Unix-style line endings.]]></name>
         <description><![CDATA[Use Unix-style line endings.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -491,7 +491,7 @@
         <name><![CDATA[Favor the use of Integer#even? && Integer#odd?]]></name>
         <description><![CDATA[Favor the use of Integer#even? && Integer#odd?]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -500,7 +500,7 @@
         <name><![CDATA[Do not use unnecessary spacing.]]></name>
         <description><![CDATA[Do not use unnecessary spacing.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -509,7 +509,7 @@
         <name><![CDATA[Use snake_case for source file names.]]></name>
         <description><![CDATA[Use snake_case for source file names.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -518,7 +518,7 @@
         <name><![CDATA[Add the frozen_string_literal comment to the top of files to help transition from Ruby 2.3.0 to Ruby 3.0.]]></name>
         <description><![CDATA[Add the frozen_string_literal comment to the top of files to help transition from Ruby 2.3.0 to Ruby 3.0.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -527,7 +527,7 @@
         <name><![CDATA[Checks the indentation of the first non-blank non-comment line in a file.]]></name>
         <description><![CDATA[Checks the indentation of the first non-blank non-comment line in a file.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -536,7 +536,7 @@
         <name><![CDATA[Checks the indentation of the first parameter in a method call.]]></name>
         <description><![CDATA[Checks the indentation of the first parameter in a method call.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -545,7 +545,7 @@
         <name><![CDATA[Checks for flip flops]]></name>
         <description><![CDATA[Checks for flip flops]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -554,7 +554,7 @@
         <name><![CDATA[Checks use of for or each in multiline loops.]]></name>
         <description><![CDATA[Checks use of for or each in multiline loops.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -563,7 +563,7 @@
         <name><![CDATA[Enforce the use of Kernel#sprintf, Kernel#format or String#%.]]></name>
         <description><![CDATA[Enforce the use of Kernel#sprintf, Kernel#format or String#%.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -572,7 +572,7 @@
         <name><![CDATA[Do not introduce global variables.]]></name>
         <description><![CDATA[Do not introduce global variables.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -581,7 +581,7 @@
         <name><![CDATA[Check for conditionals that can be replaced with guard clauses]]></name>
         <description><![CDATA[Check for conditionals that can be replaced with guard clauses]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -590,7 +590,7 @@
         <name><![CDATA[Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1, :b => 2 }.]]></name>
         <description><![CDATA[Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1, :b => 2 }.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -599,7 +599,7 @@
         <name><![CDATA[Finds if nodes inside else, which can be converted to elsif.]]></name>
         <description><![CDATA[Finds if nodes inside else, which can be converted to elsif.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -608,7 +608,7 @@
         <name><![CDATA[Favor modifier if/unless usage when you have a single-line body.]]></name>
         <description><![CDATA[Favor modifier if/unless usage when you have a single-line body.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -617,7 +617,7 @@
         <name><![CDATA[Avoid modifier if/unless usage on conditionals.]]></name>
         <description><![CDATA[Avoid modifier if/unless usage on conditionals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -626,7 +626,7 @@
         <name><![CDATA[Do not use if x; .... Use the ternary operator instead.]]></name>
         <description><![CDATA[Do not use if x; .... Use the ternary operator instead.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -635,7 +635,7 @@
         <name><![CDATA[Keep indentation straight.]]></name>
         <description><![CDATA[Keep indentation straight.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -644,7 +644,7 @@
         <name><![CDATA[Use 2 spaces for indentation.]]></name>
         <description><![CDATA[Use 2 spaces for indentation.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -653,7 +653,7 @@
         <name><![CDATA[Checks that conditional statements do not have an identical line at the end of each branch, which can validly be moved out of the conditional.]]></name>
         <description><![CDATA[Checks that conditional statements do not have an identical line at the end of each branch, which can validly be moved out of the conditional.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -662,7 +662,7 @@
         <name><![CDATA[Checks the indentation of the first element in an array literal.]]></name>
         <description><![CDATA[Checks the indentation of the first element in an array literal.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -671,7 +671,7 @@
         <name><![CDATA[Checks the indentation of the first line of the right-hand-side of a multi-line assignment.]]></name>
         <description><![CDATA[Checks the indentation of the first line of the right-hand-side of a multi-line assignment.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -680,7 +680,7 @@
         <name><![CDATA[Checks the indentation of the first key in a hash literal.]]></name>
         <description><![CDATA[Checks the indentation of the first key in a hash literal.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -689,7 +689,7 @@
         <name><![CDATA[This cops checks the indentation of the here document bodies.]]></name>
         <description><![CDATA[This cops checks the indentation of the here document bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -698,7 +698,7 @@
         <name><![CDATA[Use Kernel#loop for infinite loops.]]></name>
         <description><![CDATA[Use Kernel#loop for infinite loops.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -707,7 +707,7 @@
         <name><![CDATA[Use the inverse method instead of `!.method` if an inverse method is defined.]]></name>
         <description><![CDATA[Use the inverse method instead of `!.method` if an inverse method is defined.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -716,7 +716,7 @@
         <name><![CDATA[Use the new lambda literal syntax for single-line blocks.]]></name>
         <description><![CDATA[Use the new lambda literal syntax for single-line blocks.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -725,7 +725,7 @@
         <name><![CDATA[Checks for spaces in lambda literals.]]></name>
         <description><![CDATA[Checks for spaces in lambda literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -734,7 +734,7 @@
         <name><![CDATA[Use lambda.call(...) instead of lambda.(...).]]></name>
         <description><![CDATA[Use lambda.call(...) instead of lambda.(...).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -743,7 +743,7 @@
         <name><![CDATA[Comments should start with a space.]]></name>
         <description><![CDATA[Comments should start with a space.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -752,7 +752,7 @@
         <name><![CDATA[Use \ instead of + or << to concatenate two string literals at line end.]]></name>
         <description><![CDATA[Use \ instead of + or << to concatenate two string literals at line end.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -761,7 +761,7 @@
         <name><![CDATA[Do not use parentheses for method calls with no arguments.]]></name>
         <description><![CDATA[Do not use parentheses for method calls with no arguments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -770,7 +770,7 @@
         <name><![CDATA[Checks if the method definitions have or don't have parentheses.]]></name>
         <description><![CDATA[Checks if the method definitions have or don't have parentheses.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -779,7 +779,7 @@
         <name><![CDATA[Use the configured style when naming methods.]]></name>
         <description><![CDATA[Use the configured style when naming methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -788,7 +788,7 @@
         <name><![CDATA[Avoid using `method_missing`.]]></name>
         <description><![CDATA[Avoid using `method_missing`.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -797,7 +797,7 @@
         <name><![CDATA[Checks for grouping of mixins in `class` and `module` bodies.]]></name>
         <description><![CDATA[Checks for grouping of mixins in `class` and `module` bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -806,7 +806,7 @@
         <name><![CDATA[Checks for usage of `extend self` in modules.]]></name>
         <description><![CDATA[Checks for usage of `extend self` in modules.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -815,7 +815,7 @@
         <name><![CDATA[Checks that the closing brace in an array literal is either on the same line as the last array element, or a new line.]]></name>
         <description><![CDATA[Checks that the closing brace in an array literal is either on the same line as the last array element, or a new line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -824,7 +824,7 @@
         <name><![CDATA[Avoid multi-line chains of blocks.]]></name>
         <description><![CDATA[Avoid multi-line chains of blocks.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -833,7 +833,7 @@
         <name><![CDATA[Ensures newlines after multiline block do statements.]]></name>
         <description><![CDATA[Ensures newlines after multiline block do statements.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -842,7 +842,7 @@
         <name><![CDATA[Checks that the closing brace in a hash literal is either on the same line as the last hash element, or a new line.]]></name>
         <description><![CDATA[Checks that the closing brace in a hash literal is either on the same line as the last hash element, or a new line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -851,7 +851,7 @@
         <name><![CDATA[Do not use then for multi-line if/unless.]]></name>
         <description><![CDATA[Do not use then for multi-line if/unless.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -860,7 +860,7 @@
         <name><![CDATA[Only use if/unless modifiers on single line statements.]]></name>
         <description><![CDATA[Only use if/unless modifiers on single line statements.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -869,7 +869,7 @@
         <name><![CDATA[Wrap multiline memoizations in a `begin` and `end` block.]]></name>
         <description><![CDATA[Wrap multiline memoizations in a `begin` and `end` block.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -878,7 +878,7 @@
         <name><![CDATA[Checks that the closing brace in a method call is either on the same line as the last method argument, or a new line.]]></name>
         <description><![CDATA[Checks that the closing brace in a method call is either on the same line as the last method argument, or a new line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -887,7 +887,7 @@
         <name><![CDATA[Checks indentation of method calls with the dot operator that span more than one line.]]></name>
         <description><![CDATA[Checks indentation of method calls with the dot operator that span more than one line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -896,7 +896,7 @@
         <name><![CDATA[Checks that the closing brace in a method definition is either on the same line as the last method parameter, or a new line.]]></name>
         <description><![CDATA[Checks that the closing brace in a method definition is either on the same line as the last method parameter, or a new line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -905,7 +905,7 @@
         <name><![CDATA[Checks indentation of binary operations that span more than one line.]]></name>
         <description><![CDATA[Checks indentation of binary operations that span more than one line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -914,7 +914,7 @@
         <name><![CDATA[Avoid multi-line ?: (the ternary operator); use if/unless instead.]]></name>
         <description><![CDATA[Avoid multi-line ?: (the ternary operator); use if/unless instead.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -923,7 +923,7 @@
         <name><![CDATA[Do not assign mutable objects to constants.]]></name>
         <description><![CDATA[Do not assign mutable objects to constants.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -932,7 +932,7 @@
         <name><![CDATA[Favor unless over if for negative conditions (or control flow or).]]></name>
         <description><![CDATA[Favor unless over if for negative conditions (or control flow or).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -941,7 +941,7 @@
         <name><![CDATA[Favor until over while for negative conditions.]]></name>
         <description><![CDATA[Favor until over while for negative conditions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -950,7 +950,7 @@
         <name><![CDATA[Avoid using nested modifiers.]]></name>
         <description><![CDATA[Avoid using nested modifiers.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -959,7 +959,7 @@
         <name><![CDATA[Parenthesize method calls which are nested inside the argument list of another parenthesized method call.]]></name>
         <description><![CDATA[Parenthesize method calls which are nested inside the argument list of another parenthesized method call.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -968,7 +968,7 @@
         <name><![CDATA[Use one expression per branch in a ternary operator.]]></name>
         <description><![CDATA[Use one expression per branch in a ternary operator.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -977,7 +977,7 @@
         <name><![CDATA[Add a newline after magic comments to separate them from code.]]></name>
         <description><![CDATA[Add a newline after magic comments to separate them from code.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -986,7 +986,7 @@
         <name><![CDATA[Use `next` to skip iteration instead of a condition at the end.]]></name>
         <description><![CDATA[Use `next` to skip iteration instead of a condition at the end.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -995,7 +995,7 @@
         <name><![CDATA[Prefer x.nil? to x == nil.]]></name>
         <description><![CDATA[Prefer x.nil? to x == nil.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1004,7 +1004,7 @@
         <name><![CDATA[Checks for redundant nil checks.]]></name>
         <description><![CDATA[Checks for redundant nil checks.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1013,7 +1013,7 @@
         <name><![CDATA[Use ! instead of not.]]></name>
         <description><![CDATA[Use ! instead of not.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1022,7 +1022,7 @@
         <name><![CDATA[Add underscores to large numeric literals to improve their readability.]]></name>
         <description><![CDATA[Add underscores to large numeric literals to improve their readability.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1031,7 +1031,7 @@
         <name><![CDATA[Use smallcase prefixes for numeric literals.]]></name>
         <description><![CDATA[Use smallcase prefixes for numeric literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1040,7 +1040,7 @@
         <name><![CDATA[Checks for the use of predicate- or comparison methods for numeric comparisons.]]></name>
         <description><![CDATA[Checks for the use of predicate- or comparison methods for numeric comparisons.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1049,7 +1049,7 @@
         <name><![CDATA[Favor the ternary operator(?:) over if/then/else/end constructs.]]></name>
         <description><![CDATA[Favor the ternary operator(?:) over if/then/else/end constructs.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1058,7 +1058,7 @@
         <name><![CDATA[When defining binary operators, name the argument other.]]></name>
         <description><![CDATA[When defining binary operators, name the argument other.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1067,7 +1067,7 @@
         <name><![CDATA[Checks for optional arguments that do not appear at the end of the argument list]]></name>
         <description><![CDATA[Checks for optional arguments that do not appear at the end of the argument list]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1076,7 +1076,7 @@
         <name><![CDATA[Check for simple usages of parallel assignment. It will only warn when the number of variables matches on both sides of the assignment.]]></name>
         <description><![CDATA[Check for simple usages of parallel assignment. It will only warn when the number of variables matches on both sides of the assignment.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1085,7 +1085,7 @@
         <name><![CDATA[Don't use parentheses around the condition of an if/unless/while.]]></name>
         <description><![CDATA[Don't use parentheses around the condition of an if/unless/while.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1094,7 +1094,7 @@
         <name><![CDATA[Use `%`-literal delimiters consistently]]></name>
         <description><![CDATA[Use `%`-literal delimiters consistently]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1103,7 +1103,7 @@
         <name><![CDATA[Checks if uses of %Q/%q match the configured preference.]]></name>
         <description><![CDATA[Checks if uses of %Q/%q match the configured preference.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1112,7 +1112,7 @@
         <name><![CDATA[Avoid Perl-style regex back references.]]></name>
         <description><![CDATA[Avoid Perl-style regex back references.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1121,7 +1121,7 @@
         <name><![CDATA[Check the names of predicate methods.]]></name>
         <description><![CDATA[Check the names of predicate methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1130,7 +1130,7 @@
         <name><![CDATA[Checks use of `has_key?` and `has_value?` Hash methods.]]></name>
         <description><![CDATA[Checks use of `has_key?` and `has_value?` Hash methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1139,7 +1139,7 @@
         <name><![CDATA[Use proc instead of Proc.new.]]></name>
         <description><![CDATA[Use proc instead of Proc.new.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1148,7 +1148,7 @@
         <name><![CDATA[Checks the arguments passed to raise/fail.]]></name>
         <description><![CDATA[Checks the arguments passed to raise/fail.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1157,7 +1157,7 @@
         <name><![CDATA[Don't use begin blocks when they are not needed.]]></name>
         <description><![CDATA[Don't use begin blocks when they are not needed.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1166,7 +1166,7 @@
         <name><![CDATA[Checks for an obsolete RuntimeException argument in raise/fail.]]></name>
         <description><![CDATA[Checks for an obsolete RuntimeException argument in raise/fail.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1175,7 +1175,7 @@
         <name><![CDATA[Checks usages of Object#freeze on immutable objects.]]></name>
         <description><![CDATA[Checks usages of Object#freeze on immutable objects.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1184,7 +1184,7 @@
         <name><![CDATA[Checks for parentheses that seem not to serve any purpose.]]></name>
         <description><![CDATA[Checks for parentheses that seem not to serve any purpose.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1193,7 +1193,7 @@
         <name><![CDATA[Don't use return where it's not required.]]></name>
         <description><![CDATA[Don't use return where it's not required.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1202,7 +1202,7 @@
         <name><![CDATA[Don't use self where it's not needed.]]></name>
         <description><![CDATA[Don't use self where it's not needed.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1211,7 +1211,7 @@
         <name><![CDATA[Use / or %r around regular expressions.]]></name>
         <description><![CDATA[Use / or %r around regular expressions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1220,7 +1220,7 @@
         <name><![CDATA[Align rescues and ensures correctly.]]></name>
         <description><![CDATA[Align rescues and ensures correctly.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1229,7 +1229,7 @@
         <name><![CDATA[Avoid using rescue in its modifier form.]]></name>
         <description><![CDATA[Avoid using rescue in its modifier form.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1238,7 +1238,7 @@
         <name><![CDATA[This cop transforms usages of a method call safeguarded by a check for the existance of the object to safe navigation (`&.`).]]></name>
         <description><![CDATA[This cop transforms usages of a method call safeguarded by a check for the existance of the object to safe navigation (`&.`).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1247,7 +1247,7 @@
         <name><![CDATA[Checks for places where self-assignment shorthand should have been used.]]></name>
         <description><![CDATA[Checks for places where self-assignment shorthand should have been used.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1256,7 +1256,7 @@
         <name><![CDATA[Don't use semicolons to terminate expressions.]]></name>
         <description><![CDATA[Don't use semicolons to terminate expressions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1265,7 +1265,7 @@
         <name><![CDATA[Checks for proper usage of fail and raise.]]></name>
         <description><![CDATA[Checks for proper usage of fail and raise.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1274,7 +1274,7 @@
         <name><![CDATA[Avoid single-line methods.]]></name>
         <description><![CDATA[Avoid single-line methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1283,7 +1283,7 @@
         <name><![CDATA[Checks that exactly one space is used between a method name and the first argument for method calls without parentheses.]]></name>
         <description><![CDATA[Checks that exactly one space is used between a method name and the first argument for method calls without parentheses.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1292,7 +1292,7 @@
         <name><![CDATA[Use spaces after colons.]]></name>
         <description><![CDATA[Use spaces after colons.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1301,7 +1301,7 @@
         <name><![CDATA[Use spaces after commas.]]></name>
         <description><![CDATA[Use spaces after commas.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1310,7 +1310,7 @@
         <name><![CDATA[Do not put a space between a method name and the opening parenthesis in a method definition.]]></name>
         <description><![CDATA[Do not put a space between a method name and the opening parenthesis in a method definition.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1319,7 +1319,7 @@
         <name><![CDATA[Tracks redundant space after the ! operator.]]></name>
         <description><![CDATA[Tracks redundant space after the ! operator.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1328,7 +1328,7 @@
         <name><![CDATA[Use spaces after semicolons.]]></name>
         <description><![CDATA[Use spaces after semicolons.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1337,7 +1337,7 @@
         <name><![CDATA[Checks that the left block brace has or doesn't have space before it.]]></name>
         <description><![CDATA[Checks that the left block brace has or doesn't have space before it.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1346,7 +1346,7 @@
         <name><![CDATA[No spaces before commas.]]></name>
         <description><![CDATA[No spaces before commas.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1355,7 +1355,7 @@
         <name><![CDATA[Checks for missing space between code and a comment on the same line.]]></name>
         <description><![CDATA[Checks for missing space between code and a comment on the same line.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1364,7 +1364,7 @@
         <name><![CDATA[No spaces before semicolons.]]></name>
         <description><![CDATA[No spaces before semicolons.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1373,7 +1373,7 @@
         <name><![CDATA[Checks that block braces have or don't have surrounding space. For blocks taking parameters, checks that the left brace has or doesn't have trailing space.]]></name>
         <description><![CDATA[Checks that block braces have or don't have surrounding space. For blocks taking parameters, checks that the left brace has or doesn't have trailing space.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1382,7 +1382,7 @@
         <name><![CDATA[Checks the spacing inside and after block parameters pipes.]]></name>
         <description><![CDATA[Checks the spacing inside and after block parameters pipes.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1391,7 +1391,7 @@
         <name><![CDATA[Checks that the equals signs in parameter default assignments have or don't have surrounding space depending on configuration.]]></name>
         <description><![CDATA[Checks that the equals signs in parameter default assignments have or don't have surrounding space depending on configuration.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1400,7 +1400,7 @@
         <name><![CDATA[Use a space around keywords if appropriate.]]></name>
         <description><![CDATA[Use a space around keywords if appropriate.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1409,7 +1409,7 @@
         <name><![CDATA[Use a single space around operators.]]></name>
         <description><![CDATA[Use a single space around operators.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1418,7 +1418,7 @@
         <name><![CDATA[No unnecessary additional spaces between elements in %i/%w literals.]]></name>
         <description><![CDATA[No unnecessary additional spaces between elements in %i/%w literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1427,7 +1427,7 @@
         <name><![CDATA[No unnecessary spaces inside delimiters of %i/%w/%x literals.]]></name>
         <description><![CDATA[No unnecessary spaces inside delimiters of %i/%w/%x literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1436,7 +1436,7 @@
         <name><![CDATA[No spaces after [ or before ].]]></name>
         <description><![CDATA[No spaces after [ or before ].]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1445,7 +1445,7 @@
         <name><![CDATA[Use spaces inside hash literal braces - or don't.]]></name>
         <description><![CDATA[Use spaces inside hash literal braces - or don't.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1454,7 +1454,7 @@
         <name><![CDATA[No spaces after ( or before ).]]></name>
         <description><![CDATA[No spaces after ( or before ).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1463,7 +1463,7 @@
         <name><![CDATA[No spaces inside range literals.]]></name>
         <description><![CDATA[No spaces inside range literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1472,7 +1472,7 @@
         <name><![CDATA[Checks for padding/surrounding spaces inside string interpolation.]]></name>
         <description><![CDATA[Checks for padding/surrounding spaces inside string interpolation.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1481,7 +1481,7 @@
         <name><![CDATA[Avoid Perl-style global variables.]]></name>
         <description><![CDATA[Avoid Perl-style global variables.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1490,7 +1490,7 @@
         <name><![CDATA[Check for the usage of parentheses around stabby lambda arguments.]]></name>
         <description><![CDATA[Check for the usage of parentheses around stabby lambda arguments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1499,7 +1499,7 @@
         <name><![CDATA[Checks if uses of quotes match the configured preference.]]></name>
         <description><![CDATA[Checks if uses of quotes match the configured preference.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1508,7 +1508,7 @@
         <name><![CDATA[Checks if uses of quotes inside expressions in interpolated strings match the configured preference.]]></name>
         <description><![CDATA[Checks if uses of quotes inside expressions in interpolated strings match the configured preference.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1517,7 +1517,7 @@
         <name><![CDATA[Checks for inheritance from Struct.new.]]></name>
         <description><![CDATA[Checks for inheritance from Struct.new.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1526,7 +1526,7 @@
         <name><![CDATA[Use plain symbols instead of string symbols when possible.]]></name>
         <description><![CDATA[Use plain symbols instead of string symbols when possible.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1535,7 +1535,7 @@
         <name><![CDATA[Use symbols as procs instead of blocks when possible.]]></name>
         <description><![CDATA[Use symbols as procs instead of blocks when possible.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1544,7 +1544,7 @@
         <name><![CDATA[No hard tabs.]]></name>
         <description><![CDATA[No hard tabs.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1553,7 +1553,7 @@
         <name><![CDATA[Checks for use of parentheses around ternary conditions.]]></name>
         <description><![CDATA[Checks for use of parentheses around ternary conditions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1562,7 +1562,7 @@
         <name><![CDATA[Checks trailing blank lines and final newline.]]></name>
         <description><![CDATA[Checks trailing blank lines and final newline.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1571,7 +1571,7 @@
         <name><![CDATA[Checks for trailing comma in argument lists.]]></name>
         <description><![CDATA[Checks for trailing comma in argument lists.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1580,7 +1580,7 @@
         <name><![CDATA[Checks for trailing comma in array and hash literals.]]></name>
         <description><![CDATA[Checks for trailing comma in array and hash literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1589,7 +1589,7 @@
         <name><![CDATA[Avoid trailing whitespace.]]></name>
         <description><![CDATA[Avoid trailing whitespace.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1598,7 +1598,7 @@
         <name><![CDATA[Prefer attr_* methods to trivial readers/writers.]]></name>
         <description><![CDATA[Prefer attr_* methods to trivial readers/writers.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1607,7 +1607,7 @@
         <name><![CDATA[Do not use unless with else. Rewrite these with the positive case first.]]></name>
         <description><![CDATA[Do not use unless with else. Rewrite these with the positive case first.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1616,7 +1616,7 @@
         <name><![CDATA[Checks for %W when interpolation is not needed.]]></name>
         <description><![CDATA[Checks for %W when interpolation is not needed.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1625,7 +1625,7 @@
         <name><![CDATA[Checks for strings that are just an interpolated expression.]]></name>
         <description><![CDATA[Checks for strings that are just an interpolated expression.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1634,7 +1634,7 @@
         <name><![CDATA[Checks for %q/%Q when single quotes or double quotes would do.]]></name>
         <description><![CDATA[Checks for %q/%Q when single quotes or double quotes would do.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1643,7 +1643,7 @@
         <name><![CDATA[Checks for the usage of unneeded trailing underscores at the end of parallel variable assignment.]]></name>
         <description><![CDATA[Checks for the usage of unneeded trailing underscores at the end of parallel variable assignment.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1652,7 +1652,7 @@
         <name><![CDATA[Don't interpolate global, instance and class variables directly in strings.]]></name>
         <description><![CDATA[Don't interpolate global, instance and class variables directly in strings.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1661,7 +1661,7 @@
         <name><![CDATA[Use the configured style when naming variables.]]></name>
         <description><![CDATA[Use the configured style when naming variables.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1670,7 +1670,7 @@
         <name><![CDATA[Use the configured style when numbering variables.]]></name>
         <description><![CDATA[Use the configured style when numbering variables.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1679,7 +1679,7 @@
         <name><![CDATA[Use when x then ... for one-line cases.]]></name>
         <description><![CDATA[Use when x then ... for one-line cases.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1688,7 +1688,7 @@
         <name><![CDATA[Checks for redundant do after while or until.]]></name>
         <description><![CDATA[Checks for redundant do after while or until.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1697,7 +1697,7 @@
         <name><![CDATA[Favor modifier while/until usage when you have a single-line body.]]></name>
         <description><![CDATA[Favor modifier while/until usage when you have a single-line body.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1706,7 +1706,7 @@
         <name><![CDATA[Use %w or %W for arrays of words.]]></name>
         <description><![CDATA[Use %w or %W for arrays of words.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1715,7 +1715,7 @@
         <name><![CDATA[Use #empty? when testing for objects of length 0.]]></name>
         <description><![CDATA[Use #empty? when testing for objects of length 0.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1724,7 +1724,7 @@
         <name><![CDATA[A calculated magnitude based on number of assignments, branches, and conditions.]]></name>
         <description><![CDATA[A calculated magnitude based on number of assignments, branches, and conditions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1733,7 +1733,7 @@
         <name><![CDATA[Avoid excessive block nesting]]></name>
         <description><![CDATA[Avoid excessive block nesting]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1742,7 +1742,7 @@
         <name><![CDATA[Avoid classes longer than 100 lines of code.]]></name>
         <description><![CDATA[Avoid classes longer than 100 lines of code.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1751,7 +1751,7 @@
         <name><![CDATA[Avoid modules longer than 100 lines of code.]]></name>
         <description><![CDATA[Avoid modules longer than 100 lines of code.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1760,7 +1760,7 @@
         <name><![CDATA[A complexity metric that is strongly correlated to the number of test cases needed to validate a method.]]></name>
         <description><![CDATA[A complexity metric that is strongly correlated to the number of test cases needed to validate a method.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1769,7 +1769,7 @@
         <name><![CDATA[Limit lines to 80 characters.]]></name>
         <description><![CDATA[Limit lines to 80 characters.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1778,7 +1778,7 @@
         <name><![CDATA[Avoid methods longer than 10 lines of code.]]></name>
         <description><![CDATA[Avoid methods longer than 10 lines of code.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1787,7 +1787,7 @@
         <name><![CDATA[Avoid long blocks with many lines.]]></name>
         <description><![CDATA[Avoid long blocks with many lines.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1796,7 +1796,7 @@
         <name><![CDATA[Avoid parameter lists longer than three or four parameters.]]></name>
         <description><![CDATA[Avoid parameter lists longer than three or four parameters.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1805,7 +1805,7 @@
         <name><![CDATA[A complexity metric geared towards measuring complexity for a human reader.]]></name>
         <description><![CDATA[A complexity metric geared towards measuring complexity for a human reader.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1814,7 +1814,7 @@
         <name><![CDATA[Checks for ambiguous operators in the first argument of a method invocation without parentheses.]]></name>
         <description><![CDATA[Checks for ambiguous operators in the first argument of a method invocation without parentheses.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1823,7 +1823,7 @@
         <name><![CDATA[Checks for ambiguous regexp literals in the first argument of a method invocation without parentheses.]]></name>
         <description><![CDATA[Checks for ambiguous regexp literals in the first argument of a method invocation without parentheses.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1832,7 +1832,7 @@
         <name><![CDATA[Don't use assignment in conditions.]]></name>
         <description><![CDATA[Don't use assignment in conditions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1841,7 +1841,7 @@
         <name><![CDATA[Align block ends correctly.]]></name>
         <description><![CDATA[Align block ends correctly.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1850,7 +1850,7 @@
         <name><![CDATA[Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument.]]></name>
         <description><![CDATA[Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1859,7 +1859,7 @@
         <name><![CDATA[Checks for condition placed in a confusing position relative to the keyword.]]></name>
         <description><![CDATA[Checks for condition placed in a confusing position relative to the keyword.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1868,7 +1868,7 @@
         <name><![CDATA[Check for debugger calls.]]></name>
         <description><![CDATA[Check for debugger calls.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1877,7 +1877,7 @@
         <name><![CDATA[Align ends corresponding to defs correctly.]]></name>
         <description><![CDATA[Align ends corresponding to defs correctly.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1886,7 +1886,7 @@
         <name><![CDATA[Check for deprecated class method calls.]]></name>
         <description><![CDATA[Check for deprecated class method calls.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1895,7 +1895,7 @@
         <name><![CDATA[Do not repeat values in case conditionals.]]></name>
         <description><![CDATA[Do not repeat values in case conditionals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1904,7 +1904,7 @@
         <name><![CDATA[Check for duplicate method definitions.]]></name>
         <description><![CDATA[Check for duplicate method definitions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1913,7 +1913,7 @@
         <name><![CDATA[Check for duplicate keys in hash literals.]]></name>
         <description><![CDATA[Check for duplicate keys in hash literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1922,7 +1922,7 @@
         <name><![CDATA[Check for immutable argument given to each_with_object.]]></name>
         <description><![CDATA[Check for immutable argument given to each_with_object.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1931,7 +1931,7 @@
         <name><![CDATA[Check for odd code arrangement in an else block.]]></name>
         <description><![CDATA[Check for odd code arrangement in an else block.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1940,7 +1940,7 @@
         <name><![CDATA[Checks for empty ensure block.]]></name>
         <description><![CDATA[Checks for empty ensure block.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1949,7 +1949,7 @@
         <name><![CDATA[Checks for empty expressions.]]></name>
         <description><![CDATA[Checks for empty expressions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1958,7 +1958,7 @@
         <name><![CDATA[Checks for empty string interpolation.]]></name>
         <description><![CDATA[Checks for empty string interpolation.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1967,7 +1967,7 @@
         <name><![CDATA[Checks for `when` branches with empty bodies.]]></name>
         <description><![CDATA[Checks for `when` branches with empty bodies.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1976,7 +1976,7 @@
         <name><![CDATA[Align ends correctly.]]></name>
         <description><![CDATA[Align ends correctly.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1985,7 +1985,7 @@
         <name><![CDATA[END blocks should not be placed inside method definitions.]]></name>
         <description><![CDATA[END blocks should not be placed inside method definitions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -1994,7 +1994,7 @@
         <name><![CDATA[Do not use return in an ensure block.]]></name>
         <description><![CDATA[Do not use return in an ensure block.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2003,7 +2003,7 @@
         <name><![CDATA[Catches floating-point literals too large or small for Ruby to represent.]]></name>
         <description><![CDATA[Catches floating-point literals too large or small for Ruby to represent.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2012,7 +2012,7 @@
         <name><![CDATA[The number of parameters to format/sprint must match the fields.]]></name>
         <description><![CDATA[The number of parameters to format/sprint must match the fields.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2021,7 +2021,7 @@
         <name><![CDATA[Don't suppress exception.]]></name>
         <description><![CDATA[Don't suppress exception.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2030,7 +2030,7 @@
         <name><![CDATA[Checks for adjacent string literals on the same line, which could better be represented as a single string literal.]]></name>
         <description><![CDATA[Checks for adjacent string literals on the same line, which could better be represented as a single string literal.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2039,7 +2039,7 @@
         <name><![CDATA[Checks for attempts to use `private` or `protected` to set the visibility of a class method, which does not work.]]></name>
         <description><![CDATA[Checks for attempts to use `private` or `protected` to set the visibility of a class method, which does not work.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2048,7 +2048,7 @@
         <name><![CDATA[Avoid inheriting from the `Exception` class.]]></name>
         <description><![CDATA[Avoid inheriting from the `Exception` class.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2057,7 +2057,7 @@
         <name><![CDATA[Checks for invalid character literals with a non-escaped whitespace character.]]></name>
         <description><![CDATA[Checks for invalid character literals with a non-escaped whitespace character.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2066,7 +2066,7 @@
         <name><![CDATA[Checks of literals used in conditions.]]></name>
         <description><![CDATA[Checks of literals used in conditions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2075,7 +2075,7 @@
         <name><![CDATA[Checks for literals used in interpolation.]]></name>
         <description><![CDATA[Checks for literals used in interpolation.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2084,7 +2084,7 @@
         <name><![CDATA[Use Kernel#loop with break rather than begin/end/until or begin/end/while for post-loop tests.]]></name>
         <description><![CDATA[Use Kernel#loop with break rather than begin/end/until or begin/end/while for post-loop tests.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2093,7 +2093,7 @@
         <name><![CDATA[Use `&&` operator to compare multiple value.]]></name>
         <description><![CDATA[Use `&&` operator to compare multiple value.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2102,7 +2102,7 @@
         <name><![CDATA[Do not use nested method definitions.]]></name>
         <description><![CDATA[Do not use nested method definitions.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2111,7 +2111,7 @@
         <name><![CDATA[Do not omit the accumulator when calling `next` in a `reduce`/`inject` block.]]></name>
         <description><![CDATA[Do not omit the accumulator when calling `next` in a `reduce`/`inject` block.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2120,7 +2120,7 @@
         <name><![CDATA[Do not use return in iterator to cause non-local exit.]]></name>
         <description><![CDATA[Do not use return in iterator to cause non-local exit.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2129,7 +2129,7 @@
         <name><![CDATA[Checks for method calls with a space before the opening parenthesis.]]></name>
         <description><![CDATA[Checks for method calls with a space before the opening parenthesis.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2138,7 +2138,7 @@
         <name><![CDATA[Checks for unwanted commas and quotes in %w/%W literals.]]></name>
         <description><![CDATA[Checks for unwanted commas and quotes in %w/%W literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2147,7 +2147,7 @@
         <name><![CDATA[Checks for unwanted commas and colons in %i/%I literals.]]></name>
         <description><![CDATA[Checks for unwanted commas and colons in %i/%I literals.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2156,7 +2156,7 @@
         <name><![CDATA[Checks for `rand(1)` calls. Such calls always return `0` and most likely a mistake.]]></name>
         <description><![CDATA[Checks for `rand(1)` calls. Such calls always return `0` and most likely a mistake.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2165,7 +2165,7 @@
         <name><![CDATA[Use parentheses in the method call to avoid confusion about precedence.]]></name>
         <description><![CDATA[Use parentheses in the method call to avoid confusion about precedence.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2174,7 +2174,7 @@
         <name><![CDATA[Avoid rescuing the Exception class.]]></name>
         <description><![CDATA[Avoid rescuing the Exception class.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2183,7 +2183,7 @@
         <name><![CDATA[Do not chain ordinary method call after safe navigation operator.]]></name>
         <description><![CDATA[Do not chain ordinary method call after safe navigation operator.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2192,7 +2192,7 @@
         <name><![CDATA[Avoid rescuing a higher level exception before a lower level exception.]]></name>
         <description><![CDATA[Avoid rescuing a higher level exception before a lower level exception.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2201,7 +2201,7 @@
         <name><![CDATA[Do not use the same name as outer local variable for block arguments or block local variables.]]></name>
         <description><![CDATA[Do not use the same name as outer local variable for block arguments or block local variables.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2210,7 +2210,7 @@
         <name><![CDATA[Checks for Object#to_s usage in string interpolation.]]></name>
         <description><![CDATA[Checks for Object#to_s usage in string interpolation.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2219,7 +2219,7 @@
         <name><![CDATA[Do not use prefix `_` for a variable that is used.]]></name>
         <description><![CDATA[Do not use prefix `_` for a variable that is used.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2228,7 +2228,7 @@
         <name><![CDATA[Use Integer instead of Fixnum or Bignum]]></name>
         <description><![CDATA[Use Integer instead of Fixnum or Bignum]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2237,7 +2237,7 @@
         <name><![CDATA[Checks for rubocop:disable comments that can be removed. Note: this cop is not disabled when disabling all cops. It must be explicitly disabled.]]></name>
         <description><![CDATA[Checks for rubocop:disable comments that can be removed. Note: this cop is not disabled when disabling all cops. It must be explicitly disabled.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2246,7 +2246,7 @@
         <name><![CDATA[Checks for splat unnecessarily being called on literals]]></name>
         <description><![CDATA[Checks for splat unnecessarily being called on literals]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2255,7 +2255,7 @@
         <name><![CDATA[Checks for unused block arguments.]]></name>
         <description><![CDATA[Checks for unused block arguments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2264,7 +2264,7 @@
         <name><![CDATA[Checks for unused method arguments.]]></name>
         <description><![CDATA[Checks for unused method arguments.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2273,7 +2273,7 @@
         <name><![CDATA[Unreachable code.]]></name>
         <description><![CDATA[Unreachable code.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2282,7 +2282,7 @@
         <name><![CDATA[Checks for useless access modifiers.]]></name>
         <description><![CDATA[Checks for useless access modifiers.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2291,7 +2291,7 @@
         <name><![CDATA[Checks for useless assignment to a local variable.]]></name>
         <description><![CDATA[Checks for useless assignment to a local variable.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2300,7 +2300,7 @@
         <name><![CDATA[Checks for comparison of something with itself.]]></name>
         <description><![CDATA[Checks for comparison of something with itself.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2309,7 +2309,7 @@
         <name><![CDATA[Checks for useless `else` in `begin..end` without `rescue`.]]></name>
         <description><![CDATA[Checks for useless `else` in `begin..end` without `rescue`.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2318,7 +2318,7 @@
         <name><![CDATA[Checks for useless setter call to a local variable.]]></name>
         <description><![CDATA[Checks for useless setter call to a local variable.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2327,7 +2327,7 @@
         <name><![CDATA[Possible use of operator/literal/variable in void context.]]></name>
         <description><![CDATA[Possible use of operator/literal/variable in void context.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2336,7 +2336,7 @@
         <name><![CDATA[Use `casecmp` rather than `downcase ==`, `upcase ==`, `== downcase`, or `== upcase`..]]></name>
         <description><![CDATA[Use `casecmp` rather than `downcase ==`, `upcase ==`, `== downcase`, or `== upcase`..]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2345,7 +2345,7 @@
         <name><![CDATA[Place `when` conditions that use splat at the end of the list of `when` branches.]]></name>
         <description><![CDATA[Place `when` conditions that use splat at the end of the list of `when` branches.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2354,7 +2354,7 @@
         <name><![CDATA[Use `count` instead of `select...size`, `reject...size`, `select...count`, `reject...count`, `select...length`, and `reject...length`.]]></name>
         <description><![CDATA[Use `count` instead of `select...size`, `reject...size`, `select...count`, `reject...count`, `select...length`, and `reject...length`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2363,7 +2363,7 @@
         <name><![CDATA[Use `detect` instead of `select.first`, `find_all.first`, `select.last`, and `find_all.last`.]]></name>
         <description><![CDATA[Use `detect` instead of `select.first`, `find_all.first`, `select.last`, and `find_all.last`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2372,7 +2372,7 @@
         <name><![CDATA[Use `str.{start,end}_with?(x, ..., y, ...)` instead of `str.{start,end}_with?(x, ...) || str.{start,end}_with?(y, ...)`.]]></name>
         <description><![CDATA[Use `str.{start,end}_with?(x, ..., y, ...)` instead of `str.{start,end}_with?(x, ...) || str.{start,end}_with?(y, ...)`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2381,7 +2381,7 @@
         <name><![CDATA[Use `end_with?` instead of a regex match anchored to the end of a string.]]></name>
         <description><![CDATA[Use `end_with?` instead of a regex match anchored to the end of a string.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2390,7 +2390,7 @@
         <name><![CDATA[Do not compute the size of statically sized objects except in constants]]></name>
         <description><![CDATA[Do not compute the size of statically sized objects except in constants]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2399,7 +2399,7 @@
         <name><![CDATA[Use `Enumerable#flat_map` instead of `Enumerable#map...Array#flatten(1)` or `Enumberable#collect..Array#flatten(1)`]]></name>
         <description><![CDATA[Use `Enumerable#flat_map` instead of `Enumerable#map...Array#flatten(1)` or `Enumberable#collect..Array#flatten(1)`]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2408,7 +2408,7 @@
         <name><![CDATA[Use `Hash#each_key` and `Hash#each_value` instead of `Hash#keys.each` and `Hash#values.each`.]]></name>
         <description><![CDATA[Use `Hash#each_key` and `Hash#each_value` instead of `Hash#keys.each` and `Hash#values.each`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2417,7 +2417,7 @@
         <name><![CDATA[Use `strip` instead of `lstrip.rstrip`.]]></name>
         <description><![CDATA[Use `strip` instead of `lstrip.rstrip`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2426,7 +2426,7 @@
         <name><![CDATA[Use `Range#cover?` instead of `Range#include?`.]]></name>
         <description><![CDATA[Use `Range#cover?` instead of `Range#include?`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2435,7 +2435,7 @@
         <name><![CDATA[Use `yield` instead of `block.call`.]]></name>
         <description><![CDATA[Use `yield` instead of `block.call`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2444,7 +2444,7 @@
         <name><![CDATA[Use `=~` instead of `String#match` or `Regexp#match` in a context where the returned `MatchData` is not needed.]]></name>
         <description><![CDATA[Use `=~` instead of `String#match` or `Regexp#match` in a context where the returned `MatchData` is not needed.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2453,7 +2453,7 @@
         <name><![CDATA[Use Hash#[]=, rather than Hash#merge! with a single key-value pair.]]></name>
         <description><![CDATA[Use Hash#[]=, rather than Hash#merge! with a single key-value pair.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2462,7 +2462,7 @@
         <name><![CDATA[Use `sort` instead of `sort_by { |x| x }`.]]></name>
         <description><![CDATA[Use `sort` instead of `sort_by { |x| x }`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2471,7 +2471,7 @@
         <name><![CDATA[Use `match?` instead of `Regexp#match`, `String#match`, `Symbol#match`, `Regexp#===`, or `=~` when `MatchData` is not used.]]></name>
         <description><![CDATA[Use `match?` instead of `Regexp#match`, `String#match`, `Symbol#match`, `Regexp#===`, or `=~` when `MatchData` is not used.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2480,7 +2480,7 @@
         <name><![CDATA[Use `reverse_each` instead of `reverse.each`.]]></name>
         <description><![CDATA[Use `reverse_each` instead of `reverse.each`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2489,7 +2489,7 @@
         <name><![CDATA[Use `sample` instead of `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`.]]></name>
         <description><![CDATA[Use `sample` instead of `shuffle.first`, `shuffle.last`, and `shuffle[Integer]`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2498,7 +2498,7 @@
         <name><![CDATA[Use `size` instead of `count` for counting the number of elements in `Array` and `Hash`.]]></name>
         <description><![CDATA[Use `size` instead of `count` for counting the number of elements in `Array` and `Hash`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2507,7 +2507,7 @@
         <name><![CDATA[Use `sort_by(&:foo)` instead of `sort_by { |a, b| a.foo <=> b.foo }`.]]></name>
         <description><![CDATA[Use `sort_by(&:foo)` instead of `sort_by { |a, b| a.foo <=> b.foo }`.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2516,7 +2516,7 @@
         <name><![CDATA[Use `start_with?` instead of a regex match anchored to the beginning of a string.]]></name>
         <description><![CDATA[Use `start_with?` instead of a regex match anchored to the beginning of a string.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2525,7 +2525,7 @@
         <name><![CDATA[Use `tr` instead of `gsub` when you are replacing the same number of characters. Use `delete` instead of `gsub` when you are deleting characters.]]></name>
         <description><![CDATA[Use `tr` instead of `gsub` when you are replacing the same number of characters. Use `delete` instead of `gsub` when you are deleting characters.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2534,7 +2534,7 @@
         <name><![CDATA[Checks for .times.map calls.]]></name>
         <description><![CDATA[Checks for .times.map calls.]]></description>
         <type>BUG</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2543,7 +2543,7 @@
         <name><![CDATA[Enforces consistent use of action filter methods.]]></name>
         <description><![CDATA[Enforces consistent use of action filter methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2552,7 +2552,7 @@
         <name><![CDATA[Checks the correct usage of date aware methods, such as Date.today, Date.current etc.]]></name>
         <description><![CDATA[Checks the correct usage of date aware methods, such as Date.today, Date.current etc.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2561,7 +2561,7 @@
         <name><![CDATA[Prefer delegate method for delegations.]]></name>
         <description><![CDATA[Prefer delegate method for delegations.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2570,7 +2570,7 @@
         <name><![CDATA[Do not use allow_blank as an option to delegate.]]></name>
         <description><![CDATA[Do not use allow_blank as an option to delegate.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2579,7 +2579,7 @@
         <name><![CDATA[Use `find_by` instead of dynamic `find_by_*`.]]></name>
         <description><![CDATA[Use `find_by` instead of dynamic `find_by_*`.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2588,7 +2588,7 @@
         <name><![CDATA[Avoid duplicate integers in hash-syntax `enum` declaration.]]></name>
         <description><![CDATA[Avoid duplicate integers in hash-syntax `enum` declaration.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2597,7 +2597,7 @@
         <name><![CDATA[Favor `fail`, `break`, `return`, etc. over `exit` in application or library code outside of Rake files to avoid exits during unit testing or running in production.]]></name>
         <description><![CDATA[Favor `fail`, `break`, `return`, etc. over `exit` in application or library code outside of Rake files to avoid exits during unit testing or running in production.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2606,7 +2606,7 @@
         <name><![CDATA[Use `Rails.root.join` for file path joining.]]></name>
         <description><![CDATA[Use `Rails.root.join` for file path joining.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2615,7 +2615,7 @@
         <name><![CDATA[Prefer find_by over where.first.]]></name>
         <description><![CDATA[Prefer find_by over where.first.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2624,7 +2624,7 @@
         <name><![CDATA[Prefer all.find_each over all.find.]]></name>
         <description><![CDATA[Prefer all.find_each over all.find.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2633,7 +2633,7 @@
         <name><![CDATA[Prefer has_many :through to has_and_belongs_to_many.]]></name>
         <description><![CDATA[Prefer has_many :through to has_and_belongs_to_many.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2642,7 +2642,7 @@
         <name><![CDATA[Use keyword arguments instead of positional arguments in http method calls.]]></name>
         <description><![CDATA[Use keyword arguments instead of positional arguments in http method calls.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2651,7 +2651,7 @@
         <name><![CDATA[Do not add a NOT NULL column without a default value]]></name>
         <description><![CDATA[Do not add a NOT NULL column without a default value]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2660,7 +2660,7 @@
         <name><![CDATA[Checks for calls to puts, print, etc.]]></name>
         <description><![CDATA[Checks for calls to puts, print, etc.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2669,7 +2669,7 @@
         <name><![CDATA[The use of `html_safe` or `raw` may be a security risk.]]></name>
         <description><![CDATA[The use of `html_safe` or `raw` may be a security risk.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2678,7 +2678,7 @@
         <name><![CDATA[Checks for incorrect grammar when using methods like `3.day.ago`.]]></name>
         <description><![CDATA[Checks for incorrect grammar when using methods like `3.day.ago`.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2687,7 +2687,7 @@
         <name><![CDATA[Checks for read_attribute(:attr) and write_attribute(:attr, val).]]></name>
         <description><![CDATA[Checks for read_attribute(:attr) and write_attribute(:attr, val).]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2696,7 +2696,7 @@
         <name><![CDATA[Do not assign relative date to constants.]]></name>
         <description><![CDATA[Do not assign relative date to constants.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2705,7 +2705,7 @@
         <name><![CDATA[Use consistent syntax for request.referer.]]></name>
         <description><![CDATA[Use consistent syntax for request.referer.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2714,7 +2714,7 @@
         <name><![CDATA[Checks whether the change method of the migration file is reversible.]]></name>
         <description><![CDATA[Checks whether the change method of the migration file is reversible.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2723,7 +2723,7 @@
         <name><![CDATA[Use Ruby's safe navigation operator (`&.`) instead of `try!`]]></name>
         <description><![CDATA[Use Ruby's safe navigation operator (`&.`) instead of `try!`]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2732,7 +2732,7 @@
         <name><![CDATA[Checks the arguments of ActiveRecord scopes.]]></name>
         <description><![CDATA[Checks the arguments of ActiveRecord scopes.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2741,7 +2741,7 @@
         <name><![CDATA[Checks the correct usage of time zone aware methods.]]></name>
         <description><![CDATA[Checks the correct usage of time zone aware methods.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2750,7 +2750,7 @@
         <name><![CDATA[Prefer the use of uniq or distinct before pluck.]]></name>
         <description><![CDATA[Prefer the use of uniq or distinct before pluck.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2759,7 +2759,7 @@
         <name><![CDATA[Use methods that skips model validations with caution. See reference for more information.]]></name>
         <description><![CDATA[Use methods that skips model validations with caution. See reference for more information.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2768,7 +2768,7 @@
         <name><![CDATA[Use validates :attribute, hash of validations.]]></name>
         <description><![CDATA[Use validates :attribute, hash of validations.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2777,7 +2777,7 @@
         <name><![CDATA[The use of eval represents a serious security risk.]]></name>
         <description><![CDATA[The use of eval represents a serious security risk.]]></description>
         <type>VULNERABILITY</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2786,7 +2786,7 @@
         <name><![CDATA[Prefer usage of `JSON.parse` over `JSON.load` due to potential security issues. See reference for more information.]]></name>
         <description><![CDATA[Prefer usage of `JSON.parse` over `JSON.load` due to potential security issues. See reference for more information.]]></description>
         <type>VULNERABILITY</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2795,7 +2795,7 @@
         <name><![CDATA[Avoid using of `Marshal.load` or `Marshal.restore` due to potential security issues. See reference for more information.]]></name>
         <description><![CDATA[Avoid using of `Marshal.load` or `Marshal.restore` due to potential security issues. See reference for more information.]]></description>
         <type>VULNERABILITY</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2804,7 +2804,7 @@
         <name><![CDATA[Prefer usage of `YAML.safe_load` over `YAML.load` due to potential security issues. See reference for more information.]]></name>
         <description><![CDATA[Prefer usage of `YAML.safe_load` over `YAML.load` due to potential security issues. See reference for more information.]]></description>
         <type>VULNERABILITY</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2813,7 +2813,7 @@
         <name><![CDATA[Checks for duplicate gem entries in Gemfile.]]></name>
         <description><![CDATA[Checks for duplicate gem entries in Gemfile.]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
     <rule>
@@ -2822,7 +2822,7 @@
         <name><![CDATA[Sort alphabetically gems appearing within a contiguous set of lines in the Gemfile]]></name>
         <description><![CDATA[Sort alphabetically gems appearing within a contiguous set of lines in the Gemfile]]></description>
         <type>CODE_SMELL</type>
-        <status>ready</status>
+        <status>READY</status>
     </rule>
 
 </rules>
