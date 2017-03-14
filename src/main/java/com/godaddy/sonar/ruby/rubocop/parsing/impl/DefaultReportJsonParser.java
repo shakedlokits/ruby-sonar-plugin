@@ -8,6 +8,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
+import org.sonar.api.ExtensionPoint;
+import org.sonar.api.batch.BatchSide;
 import org.sonar.api.utils.log.Logger;
 import org.sonar.api.utils.log.Loggers;
 
@@ -18,6 +20,8 @@ import java.util.List;
 /**
  * Created by sergio on 3/13/17.
  */
+@BatchSide
+@ExtensionPoint
 public class DefaultReportJsonParser implements ReportJsonParser {
     private static final Logger LOG = Loggers.get(DefaultReportJsonParser.class);
 
@@ -82,7 +86,9 @@ public class DefaultReportJsonParser implements ReportJsonParser {
         offense.setSeverity(jsonObject.get("severity").getAsString());
         offense.setMessage(jsonObject.get("message").getAsString());
         offense.setCopName(jsonObject.get("cop_name").getAsString());
-        offense.setCorrected(jsonObject.get("corrected").getAsBoolean());
+        if (jsonObject.get("corrected").isJsonPrimitive()) {
+            offense.setCorrected(jsonObject.get("corrected").getAsBoolean());
+        }
         offense.setLocation(parseLocation(jsonObject.get("location").getAsJsonObject()));
         return offense;
     }

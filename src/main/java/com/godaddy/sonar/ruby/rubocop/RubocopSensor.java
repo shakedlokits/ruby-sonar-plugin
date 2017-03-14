@@ -7,6 +7,7 @@ import com.godaddy.sonar.ruby.rubocop.data.Offense;
 import com.godaddy.sonar.ruby.rubocop.data.Report;
 import com.godaddy.sonar.ruby.rubocop.parsing.ReportJsonParser;
 import com.google.common.collect.Lists;
+import org.apache.commons.logging.Log;
 import org.sonar.api.batch.fs.*;
 import org.sonar.api.batch.sensor.Sensor;
 import org.sonar.api.batch.sensor.SensorContext;
@@ -22,6 +23,7 @@ import org.sonar.api.scan.filesystem.PathResolver;
 import org.sonar.api.batch.fs.FileSystem;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by sergio on 3/13/17.
@@ -50,7 +52,7 @@ public class RubocopSensor implements Sensor {
     @Override
     public void execute(SensorContext context) {
         this.parseJsonReport();
-        for (InputFile file : Lists.newArrayList(fileSystem.inputFiles(fileSystem.predicates().hasLanguage(Ruby.KEY)))) {
+        for (InputFile file : inputRubyFiles()) {
             LOG.debug("analyzing issues in the file: " + file.absolutePath());
             try {
                 analyzeFile(file, context);
@@ -60,13 +62,19 @@ public class RubocopSensor implements Sensor {
         }
     }
 
+    private List<InputFile> inputRubyFiles() {
+        FilePredicate filePredicate = fileSystem.predicates().hasLanguage(Ruby.KEY);
+        return Lists.newArrayList(fileSystem.inputFiles(filePredicate));
+    }
+
     private void parseJsonReport() {
         String reportPath = settings.getString(RubyPlugin.RUBOCOP_REPORT_PATH_PROPERTY);
-        java.io.File report = new java.io.File(fileSystem.baseDir().toString() + "/" + reportPath);
         try {
+            java.io.File report = new java.io.File(fileSystem.baseDir().toString() + "/" + reportPath);
             this.reportData = reportJsonParser.parse(report);
         } catch (IOException e) {
-            LOG.error("Unable to load Rubocop report file!");
+            LOG.error("Unable to load Rubocop report file from " + reportPath + "!");
+            e.printStackTrace(System.out);
         }
     }
 
@@ -83,10 +91,7 @@ public class RubocopSensor implements Sensor {
 
     private void createIssueForOffence(SensorContext context, InputFile file, Offense offense) {
         NewIssue issue = context.newIssue();
-        TextPointer startPointer = file.newPointer(offense.getLocation().getLine(), offense.getLocation().getColumn());
-        TextPointer endPointer = file.newPointer(offense.getLocation().getLine(),
-                offense.getLocation().getLength() + offense.getLocation().getColumn() - 1);
-        TextRange textRange = file.newRange(startPointer, endPointer);
+        TextRange textRange = file.selectLine(offense.getLocation().getLine());
         NewIssueLocation issueLocation = issue.newLocation().on(file).at(textRange).message(offense.getMessage());
         RuleKey ruleKey = RuleKey.of(RubyPlugin.KEY_REPOSITORY_RUBOCOP, offense.getCopName());
         issue.forRule(ruleKey).at(issueLocation).save();
