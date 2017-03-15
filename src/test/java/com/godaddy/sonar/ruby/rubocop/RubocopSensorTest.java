@@ -24,7 +24,8 @@ import static org.junit.Assert.*;
  */
 public class RubocopSensorTest {
     private File moduleBaseDir = new File("src/test/resources/test-data/rubocop");
-    private final static String RUBOCOP_REPORT_FILE_NAME = "/rubocop-report-valid.json";
+    private final static String EXISTING_RUBOCOP_REPORT_FILE_NAME = "/rubocop-report-valid.json";
+    private final static String UNEXISTING_RUBOCOP_REPORT_FILE_NAME = "/rubocop-report-unexisting.json";
 
     private ReportJsonParser reportJsonParser;
     private RubocopSensor rubocopSensor;
@@ -35,7 +36,6 @@ public class RubocopSensorTest {
     @Before
     public void setUp() throws Exception {
         settings = new Settings();
-        settings.setProperty(RubyPlugin.RUBOCOP_REPORT_PATH_PROPERTY, RUBOCOP_REPORT_FILE_NAME);
 
         context = SensorContextTester.create(moduleBaseDir);
         context.setSettings(settings);
@@ -44,18 +44,28 @@ public class RubocopSensorTest {
         inputFile("config.ru", InputFile.Type.MAIN);
 
         reportJsonParser = new DefaultReportJsonParser();
-        rubocopSensor = new RubocopSensor(context.fileSystem(), reportJsonParser, settings);
     }
 
     @Test
-    public void shouldAnalyzeAndSetCorrectRubocopProblems() throws Exception {
+    public void shouldAnalyzeAndSetCorrectRubocopProblemsWhenReportFileExists() throws Exception {
+        settings.setProperty(RubyPlugin.RUBOCOP_REPORT_PATH_PROPERTY, EXISTING_RUBOCOP_REPORT_FILE_NAME);
+        rubocopSensor = new RubocopSensor(context.fileSystem(), reportJsonParser, settings);
         rubocopSensor.execute(context);
 
-        List<Issue> issues = context.allIssues().stream()
-                .filter(issue -> issue.ruleKey().toString().contains("rubocop"))
-                .collect(Collectors.toList());
+        List<Issue> issues = getRubocopRelatedIssues();
 
         assertEquals(1, issues.size());
+    }
+
+    @Test
+    public void shouldAnalyzeAndSetCorrectRubocopProblemsWhenReportFileDoesNotExists() throws Exception {
+        settings.setProperty(RubyPlugin.RUBOCOP_REPORT_PATH_PROPERTY, UNEXISTING_RUBOCOP_REPORT_FILE_NAME);
+        rubocopSensor = new RubocopSensor(context.fileSystem(), reportJsonParser, settings);
+        rubocopSensor.execute(context);
+
+        List<Issue> issues = getRubocopRelatedIssues();
+
+        assertEquals(0, issues.size());
     }
 
     /**
@@ -81,5 +91,11 @@ public class RubocopSensorTest {
         context.fileSystem().add(inputFile);
 
         return inputFile;
+    }
+
+    private List<Issue> getRubocopRelatedIssues() {
+        return context.allIssues().stream()
+                .filter(issue -> issue.ruleKey().toString().contains("rubocop"))
+                .collect(Collectors.toList());
     }
 }

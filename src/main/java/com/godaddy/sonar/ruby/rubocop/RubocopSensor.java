@@ -34,14 +34,16 @@ public class RubocopSensor implements Sensor {
     private FileSystem fileSystem;
     private ReportJsonParser reportJsonParser;
     private Report reportData;
-    private Settings settings;
+    private ReportFile reportFile;
 
     public RubocopSensor(FileSystem fileSystem,
                          ReportJsonParser reportJsonParser,
                          Settings settings){
         this.fileSystem = fileSystem;
         this.reportJsonParser = reportJsonParser;
-        this.settings = settings;
+
+        String reportPath = settings.getString(RubyPlugin.RUBOCOP_REPORT_PATH_PROPERTY);
+        this.reportFile = new ReportFile(fileSystem.baseDir().toString(), reportPath);
     }
 
     @Override
@@ -51,6 +53,10 @@ public class RubocopSensor implements Sensor {
 
     @Override
     public void execute(SensorContext context) {
+        if (!this.reportFile.isFileExists()) {
+            LOG.info("There is no Rubocop report file at path " + this.reportFile.getPath() + ". Skip Rubocop sensor.");
+            return;
+        }
         this.parseJsonReport();
         for (InputFile file : inputRubyFiles()) {
             LOG.debug("analyzing issues in the file: " + file.absolutePath());
@@ -68,12 +74,10 @@ public class RubocopSensor implements Sensor {
     }
 
     private void parseJsonReport() {
-        String reportPath = settings.getString(RubyPlugin.RUBOCOP_REPORT_PATH_PROPERTY);
         try {
-            java.io.File report = new java.io.File(fileSystem.baseDir().toString() + "/" + reportPath);
-            this.reportData = reportJsonParser.parse(report);
+            this.reportData = reportJsonParser.parse(this.reportFile.getIoFile());
         } catch (IOException e) {
-            LOG.error("Unable to load Rubocop report file from " + reportPath + "!");
+            LOG.error("Unable to load Rubocop report file from " + this.reportFile.getPath() + "!");
             e.printStackTrace(System.out);
         }
     }
