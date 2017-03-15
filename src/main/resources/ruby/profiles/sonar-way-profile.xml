@@ -236,6 +236,1888 @@
             <key>BlockVariableShadowCheck</key>
             <priority>MAJOR</priority>
         </rule>
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AccessModifierIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
 
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AccessorMethodName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Alias</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AlignArray</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AlignHash</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AlignParameters</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AndOr</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ArrayJoin</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AsciiComments</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/AsciiIdentifiers</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Attr</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/BeginBlock</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/BarePercentLiterals</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/BlockComments</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/BlockEndNewline</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/BlockDelimiters</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/BracesAroundHashParameters</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/CaseEquality</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/CaseIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/CharacterLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ClassAndModuleCamelCase</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ClassAndModuleChildren</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ClassCheck</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ClassMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ClassVars</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ClosingParenthesisIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ColonMethodCall</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/CommandLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/CommentAnnotation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/CommentIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ConditionalAssignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ConstantName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/DefWithParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Documentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/DotPosition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/DoubleNegation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EachForSimpleLoop</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EachWithObject</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ElseAlignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyElse</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyCaseCondition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLineBetweenDefs</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLines</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundAccessModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundBeginBody</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundBlockBody</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundClassBody</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundExceptionHandlingKeywords</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundModuleBody</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLinesAroundMethodBody</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyMethod</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EndBlock</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EndOfLine</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EvenOdd</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ExtraSpacing</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/FileName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/FrozenStringLiteralComment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/InitialIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/FirstParameterIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/FlipFlop</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/For</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/FormatString</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/GlobalVars</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/GuardClause</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/HashSyntax</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IfInsideElse</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IfUnlessModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IfUnlessModifierOfIfUnless</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IfWithSemicolon</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IndentationConsistency</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IndentationWidth</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IdenticalConditionalBranches</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IndentArray</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IndentAssignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IndentHash</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/IndentHeredoc</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/InfiniteLoop</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/InverseMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Lambda</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInLambdaLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/LambdaCall</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/LeadingCommentSpace</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/LineEndConcatenation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MethodCallWithoutArgsParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MethodDefParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MethodName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MethodMissing</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MixinGrouping</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ModuleFunction</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineArrayBraceLayout</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineBlockChain</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineBlockLayout</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineHashBraceLayout</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineIfThen</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineIfModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineMemoization</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineMethodCallBraceLayout</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineMethodCallIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineMethodDefinitionBraceLayout</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineOperationIndentation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MultilineTernaryOperator</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/MutableConstant</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NegatedIf</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NegatedWhile</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NestedModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NestedParenthesizedCalls</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NestedTernaryOperator</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/EmptyLineAfterMagicComment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Next</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NilComparison</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NonNilCheck</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Not</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NumericLiterals</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NumericLiteralPrefix</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/NumericPredicate</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/OneLineConditional</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/OpMethod</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/OptionalArguments</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ParallelAssignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ParenthesesAroundCondition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/PercentLiteralDelimiters</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/PercentQLiterals</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/PerlBackrefs</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/PredicateName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/PreferredHashMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Proc</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RaiseArgs</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RedundantBegin</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RedundantException</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RedundantFreeze</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RedundantParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RedundantReturn</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RedundantSelf</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RegexpLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RescueEnsureAlignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/RescueModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SafeNavigation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SelfAssignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Semicolon</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SignalException</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SingleLineMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceBeforeFirstArg</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAfterColon</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAfterComma</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAfterMethodName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAfterNot</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAfterSemicolon</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceBeforeBlockBraces</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceBeforeComma</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceBeforeComment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceBeforeSemicolon</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideBlockBraces</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAroundBlockParameters</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAroundEqualsInParameterDefault</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAroundKeyword</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceAroundOperators</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideArrayPercentLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsidePercentLiteralDelimiters</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideBrackets</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideHashLiteralBraces</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideParens</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideRangeLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpaceInsideStringInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SpecialGlobalVars</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/StabbyLambdaParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/StringLiterals</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/StringLiteralsInInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/StructInheritance</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SymbolLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/SymbolProc</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/Tab</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TernaryParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TrailingBlankLines</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TrailingCommaInArguments</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TrailingCommaInLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TrailingWhitespace</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TrivialAccessors</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/UnlessElse</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/UnneededCapitalW</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/UnneededInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/UnneededPercentQ</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/TrailingUnderscoreVariable</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/VariableInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/VariableName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/VariableNumber</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/WhenThen</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/WhileUntilDo</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/WhileUntilModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/WordArray</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Style/ZeroLengthPredicate</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/AbcSize</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/BlockNesting</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/ClassLength</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/ModuleLength</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/CyclomaticComplexity</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/LineLength</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/MethodLength</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/BlockLength</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/ParameterLists</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Metrics/PerceivedComplexity</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/AmbiguousOperator</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/AmbiguousRegexpLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/AssignmentInCondition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/BlockAlignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/CircularArgumentReference</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/ConditionPosition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/Debugger</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/DefEndAlignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/DeprecatedClassMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/DuplicateCaseCondition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/DuplicateMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/DuplicatedKey</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EachWithObjectArgument</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/ElseLayout</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EmptyEnsure</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EmptyExpression</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EmptyInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EmptyWhen</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EndAlignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EndInMethod</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/EnsureReturn</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/FloatOutOfRange</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/FormatParameterMismatch</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/HandleExceptions</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/ImplicitStringConcatenation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/IneffectiveAccessModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/InheritException</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/InvalidCharacterLiteral</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/LiteralInCondition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/LiteralInInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/Loop</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/MultipleCompare</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/NestedMethodDefinition</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/NextWithoutAccumulator</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/NonLocalExitFromIterator</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/ParenthesesAsGroupedExpression</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/PercentStringArray</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/PercentSymbolArray</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/RandOne</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/RequireParentheses</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/RescueException</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/SafeNavigationChain</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/ShadowedException</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/ShadowingOuterLocalVariable</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/StringConversionInInterpolation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnderscorePrefixedVariableName</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnifiedInteger</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnneededDisable</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnneededSplatExpansion</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnusedBlockArgument</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnusedMethodArgument</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UnreachableCode</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UselessAccessModifier</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UselessAssignment</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UselessComparison</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UselessElseWithoutRescue</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/UselessSetterCall</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Lint/Void</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/Casecmp</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/CaseWhenSplat</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/Count</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/Detect</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/DoubleStartEndWith</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/EndWith</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/FixedSize</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/FlatMap</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/HashEachMethods</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/LstripRstrip</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/RangeInclude</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/RedundantBlockCall</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/RedundantMatch</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/RedundantMerge</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/RedundantSortBy</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/RegexpMatch</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/ReverseEach</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/Sample</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/Size</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/CompareWithBlock</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/StartWith</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/StringReplacement</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Performance/TimesMap</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/ActionFilter</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/Date</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/Delegate</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/DelegateAllowBlank</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/DynamicFindBy</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/EnumUniqueness</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/Exit</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/FilePath</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/FindBy</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/FindEach</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/HasAndBelongsToMany</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/HttpPositionalArguments</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/NotNullColumn</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/Output</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/OutputSafety</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/PluralizationGrammar</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/ReadWriteAttribute</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/RelativeDateConstant</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/RequestReferer</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/ReversibleMigration</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/SafeNavigation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/ScopeArgs</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/TimeZone</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/UniqBeforePluck</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/SkipsModelValidations</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Rails/Validation</key>
+            <priority>MINOR</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Security/Eval</key>
+            <priority>CRITICAL</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Security/JSONLoad</key>
+            <priority>CRITICAL</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Security/MarshalLoad</key>
+            <priority>CRITICAL</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Security/YAMLLoad</key>
+            <priority>CRITICAL</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Bundler/DuplicatedGem</key>
+            <priority>INFO</priority>
+        </rule>
+
+        <rule>
+            <repositoryKey>rubocop</repositoryKey>
+            <key>Bundler/OrderedGems</key>
+            <priority>INFO</priority>
+        </rule>
     </rules>
 </profile>

@@ -49,6 +49,11 @@ which will generate a metric report. Please see the [gem's homepage](https://git
 
 **Important:**  We recommend using metric_fu by running `metric_fu -r --no-flog --no-flay --no-roodi --no-open` which would analyze and report all of the metrics supported by the plugin. Such as Saikuro/Cane coverage, Cane issues, Hostpots, Code smells and more..
 
+#####Rubocop static code analyzing
+[Rubocop](https://github.com/bbatsov/rubocop) is a Ruby community-driven static code analyzing tool, which is used [ruby-style-guide](https://github.com/bbatsov/ruby-style-guide) for rules definition. So its very valuable to have those rules inside SonarQube. 
+
+**Important:** We recommend run rubocop like this `rubocop -f json -o tmp/rubocop/report.json`.
+
 ##Future Plans
 * Code Duplication
 * Structural Analysis
@@ -68,3 +73,4 @@ This plugin has been tested with the following dependency versions:
 * metric_fu gem version 4.12.0 (latest at time of edit)
 * simplecov 0.12.0
 * simplecov-rcov 0.2.3
+* rubocop 0.47.1
