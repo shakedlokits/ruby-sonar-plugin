@@ -1,0 +1,12 @@
+sonarqube:
+  image: sonarqube:5.6.3
+  volumes:
+    - ./target:/opt/sonarqube/extensions/plugins
+  ports:
+    - 9000:9000
+    - 9092:9092
+
+foreman:
+  image: shakedl/foreman-analysis:latest
+  links:
+    - sonarqube

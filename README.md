@@ -1,4 +1,4 @@
-SonarQube Ruby Plugin
+SonarQube Ruby Plugin [![Build Status](https://travis-ci.org/shakedlokits/ruby-sonar-plugin.svg?branch=master)](https://travis-ci.org/shakedlokits/ruby-sonar-plugin)
 =================
 
 ##Description
