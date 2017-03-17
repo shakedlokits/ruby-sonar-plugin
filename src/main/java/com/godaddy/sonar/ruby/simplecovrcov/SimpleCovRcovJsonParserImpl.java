@@ -80,14 +80,18 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
 
     private CoverageMeasuresBuilder processReporterItem(ReporterItem reporterItem) {
         CoverageMeasuresBuilder fileCoverage = CoverageMeasuresBuilder.create();
-        for (int markId = 0; markId < reporterItem.getMarks().size(); markId++) {
-            Mark mark = (Mark)reporterItem.getMarks().toArray()[markId];
-            if (!mark.getIsNull()) {
-                int intLine = mark.getAsLong().intValue();
-                int lineNumber = markId + 1;
-                fileCoverage.setHits(lineNumber, intLine);
-            }
+        ArrayList<Mark> reporterItemMarks = (ArrayList<Mark>) reporterItem.getMarks();
+        for (int markId = 0; markId < reporterItemMarks.size(); markId++) {
+            Mark mark = reporterItemMarks.get(markId);
+            processMark(mark, markId, fileCoverage);
         }
         return fileCoverage;
+    }
+
+    private void processMark(Mark mark, Integer index, CoverageMeasuresBuilder fileCoverage) {
+        if (mark.getIsNull()) { return; }
+        int intLine = mark.getAsLong().intValue();
+        int lineNumber = index + 1;
+        fileCoverage.setHits(lineNumber, intLine);
     }
 }
