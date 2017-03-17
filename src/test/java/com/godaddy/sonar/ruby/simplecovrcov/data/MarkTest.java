@@ -1,10 +1,8 @@
 package com.godaddy.sonar.ruby.simplecovrcov.data;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.internal.exceptions.ExceptionIncludingMockitoWarnings;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by sergio on 2/8/17.

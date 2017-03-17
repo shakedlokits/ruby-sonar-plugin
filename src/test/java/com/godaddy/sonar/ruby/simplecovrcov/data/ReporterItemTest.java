@@ -5,8 +5,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by sergio on 2/8/17.
  */
