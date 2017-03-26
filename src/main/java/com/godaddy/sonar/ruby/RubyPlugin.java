@@ -32,6 +32,8 @@ public final class RubyPlugin extends SonarPlugin {
     public static final String NAME_REPOSITORY_ROODI = "Roodi";
 
     public static final String SIMPLECOVRCOV_REPORT_PATH_PROPERTY = "sonar.simplecovrcov.reportPath";
+    public static final String COVERAGE_TEST_SUITES_PROPERTY = "sonar.ruby.coverage.testSuites";
+
     public static final String METRICFU_REPORT_PATH_PROPERTY = "sonar.metricfu.reportPath";
     public static final String METRICFU_COMPLEXITY_METRIC_PROPERTY = "sonar.metricfu.complexityMetric";
 
@@ -75,6 +77,20 @@ public final class RubyPlugin extends SonarPlugin {
                 .onQualifiers(Qualifiers.PROJECT)
                 .build();
         extensions.add(simplecovrcovReportPath);
+
+        PropertyDefinition coverageTestSuitesProperty = PropertyDefinition.builder(COVERAGE_TEST_SUITES_PROPERTY)
+                .category(CoreProperties.CATEGORY_CODE_COVERAGE)
+                .subCategory("Ruby Coverage")
+                .name("Coverage test suites")
+                .description(String.join(
+                        "The following values are expected:\n",
+                        "- not defined or all => aggregate all\n",
+                        "- comma delimited test suite names => will be aggregated only the selected suites"
+                ))
+                .defaultValue("all")
+                .onQualifiers(Qualifiers.PROJECT)
+                .build();
+        extensions.add(coverageTestSuitesProperty);
 
         List<String> options = Arrays.asList("Saikuro", "Cane");
 
