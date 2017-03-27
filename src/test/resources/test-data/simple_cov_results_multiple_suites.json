@@ -34,10 +34,10 @@
   "RSpec": {
     "coverage": {
       "/project/source/subdir/file.rb": [
-        1,
-        1,
-        1,
-        1,
+        null,
+        null,
+        null,
+        null,
         null,
         1,
         null,

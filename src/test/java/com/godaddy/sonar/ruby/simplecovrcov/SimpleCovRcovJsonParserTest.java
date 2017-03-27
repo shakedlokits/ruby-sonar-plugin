@@ -1,28 +1,27 @@
 package com.godaddy.sonar.ruby.simplecovrcov;
 
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
-import org.sonar.api.config.Settings;
 import org.sonar.api.measures.CoverageMeasuresBuilder;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Map;
 
-public class SimpleCovRcovJsonParserTest extends TestCase {
+import static org.junit.Assert.assertEquals;
+
+public class SimpleCovRcovJsonParserTest {
     private final static String VALID_JSON_FILE_NAME = "src/test/resources/test-data/simple_cov_results.json";
     private final static String MULTIPLE_SUITES_FILE_NAME = "src/test/resources/test-data/simple_cov_results_multiple_suites.json";
 
     private SimpleCovRcovJsonParserImpl parser = null;
-    private DefaultCoverageSettings defaultCoverageSettings;
-    private Settings settings;
+    private MockedCoverageSettings coverageSettings;
 
     @Before
     public void setUp() throws Exception {
-        this.settings = new Settings();
-        this.defaultCoverageSettings = new DefaultCoverageSettings(this.settings);
-        parser = new SimpleCovRcovJsonParserImpl(this.defaultCoverageSettings);
+        this.coverageSettings = new MockedCoverageSettings();
+        parser = new SimpleCovRcovJsonParserImpl(this.coverageSettings);
     }
 
     @Test
@@ -44,7 +43,27 @@ public class SimpleCovRcovJsonParserTest extends TestCase {
     }
 
     @Test
-    public void testParserWithMultipleSuites() throws IOException {
+    public void testParserWithAllSuites() throws IOException {
+        this.coverageSettings.setProcessAllSuitesFlag(true);
+        File reportFile = new File(MULTIPLE_SUITES_FILE_NAME);
+        Map<String, CoverageMeasuresBuilder> coveredFiles = parser.parse(reportFile);
+        String coveredFile = "/project/source/subdir/file.rb";
+        assertEquals(1, coveredFiles.size());
+        assertEquals(coveredFiles.containsKey(coveredFile), true);
+        CoverageMeasuresBuilder builder = coveredFiles.get(coveredFile);
+        assertEquals(14, builder.getCoveredLines());
+    }
 
+    @Test
+    public void testParserWithSpecifiedSuites() throws IOException {
+        this.coverageSettings.setProcessAllSuitesFlag(false);
+        this.coverageSettings.setConfiguredSuitesNamesList(Collections.singletonList("RSpec"));
+        File reportFile = new File(MULTIPLE_SUITES_FILE_NAME);
+        Map<String, CoverageMeasuresBuilder> coveredFiles = parser.parse(reportFile);
+        String coveredFile = "/project/source/subdir/file.rb";
+        assertEquals(1, coveredFiles.size());
+        assertEquals(coveredFiles.containsKey(coveredFile), true);
+        CoverageMeasuresBuilder builder = coveredFiles.get(coveredFile);
+        assertEquals(11, builder.getCoveredLines());
     }
 }
