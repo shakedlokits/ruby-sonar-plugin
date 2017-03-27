@@ -1,7 +1,6 @@
 package com.godaddy.sonar.ruby.simplecovrcov;
 
 import junit.framework.TestCase;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.sonar.api.config.Settings;
@@ -13,21 +12,17 @@ import java.util.Map;
 
 public class SimpleCovRcovJsonParserTest extends TestCase {
     private final static String VALID_JSON_FILE_NAME = "src/test/resources/test-data/simple_cov_results.json";
+    private final static String MULTIPLE_SUITES_FILE_NAME = "src/test/resources/test-data/simple_cov_results_multiple_suites.json";
 
     private SimpleCovRcovJsonParserImpl parser = null;
-    private CoverageSettings coverageSettings;
+    private DefaultCoverageSettings defaultCoverageSettings;
     private Settings settings;
 
     @Before
     public void setUp() throws Exception {
         this.settings = new Settings();
-        this.coverageSettings = new CoverageSettings(this.settings);
-        parser = new SimpleCovRcovJsonParserImpl(this.coverageSettings);
-    }
-
-    @After
-    public void tearDown() throws Exception {
-
+        this.defaultCoverageSettings = new DefaultCoverageSettings(this.settings);
+        parser = new SimpleCovRcovJsonParserImpl(this.defaultCoverageSettings);
     }
 
     @Test
@@ -46,5 +41,10 @@ public class SimpleCovRcovJsonParserTest extends TestCase {
 
         CoverageMeasuresBuilder builder = coveredFiles.get(coveredFile1);
         assertEquals(13, builder.getCoveredLines());
+    }
+
+    @Test
+    public void testParserWithMultipleSuites() throws IOException {
+
     }
 }

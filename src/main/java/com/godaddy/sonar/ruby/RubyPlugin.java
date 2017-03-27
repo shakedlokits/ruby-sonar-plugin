@@ -4,6 +4,7 @@ import com.godaddy.sonar.ruby.core.Ruby;
 import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
+import com.godaddy.sonar.ruby.simplecovrcov.DefaultCoverageSettings;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
 import org.sonar.api.CoreProperties;
@@ -42,6 +43,7 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(Ruby.class);
         // FIXME add back code duplication metrics once it's fixed
         // extensions.add(RubyCPDMapping.class);
+        extensions.add(DefaultCoverageSettings.class);
         extensions.add(SimpleCovRcovSensor.class);
         extensions.add(SimpleCovRcovJsonParserImpl.class);
         extensions.add(MetricfuYamlParser.class);

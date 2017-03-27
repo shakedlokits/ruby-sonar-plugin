@@ -1,35 +1,11 @@
 package com.godaddy.sonar.ruby.simplecovrcov;
 
-import com.godaddy.sonar.ruby.RubyPlugin;
-import org.sonar.api.ExtensionPoint;
-import org.sonar.api.batch.BatchSide;
-import org.sonar.api.config.Settings;
-
-import java.util.*;
+import java.util.List;
 
 /**
- * Provides a wrapper around SonarQube settings.
- *
- * This wrapper provides a high-level API for coverage and SimpleCov related settings entries.
- *
- * @author Sergey Gernyak
+ * Created by sergio on 3/27/17.
  */
-@BatchSide
-@ExtensionPoint
-public class CoverageSettings {
-    public static final String ALL_SUITES_FLAG = "all";
-
-    private Settings settings;
-
-    /**
-     * Instantiates a new settings wrapper for coverage handling subsystem.
-     *
-     * @param settings the user settings object
-     */
-    public CoverageSettings(Settings settings) {
-        this.settings = settings;
-    }
-
+public interface CoverageSettings {
     /**
      * Specifies whether all suites should be processed or not.
      *
@@ -40,10 +16,7 @@ public class CoverageSettings {
      *
      * @return a flag, which specifies all suites should be processed or not
      */
-    public Boolean processAllSuites() {
-        String propertyValue = fetchCoverageTestSuitesProperty();
-        return propertyValue == null || propertyValue.isEmpty() || propertyValue.equals(ALL_SUITES_FLAG);
-    }
+    Boolean processAllSuites();
 
     /**
      * Specifies a list of manually desired list of test suites, which should be processed.
@@ -54,12 +27,5 @@ public class CoverageSettings {
      *
      * @return a list of suites names or empty list
      */
-    public List<String> configuredSuitesNames() {
-        if (this.processAllSuites()) { return Collections.emptyList(); }
-        return Arrays.asList(fetchCoverageTestSuitesProperty().split(","));
-    }
-
-    private String fetchCoverageTestSuitesProperty() {
-        return settings.getString(RubyPlugin.COVERAGE_TEST_SUITES_PROPERTY);
-    }
+    List<String> configuredSuitesNames();
 }
