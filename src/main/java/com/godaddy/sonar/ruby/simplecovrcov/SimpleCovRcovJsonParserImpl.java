@@ -10,6 +10,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
+import org.sonar.api.config.Settings;
 import org.sonar.api.measures.CoverageMeasuresBuilder;
 import org.sonar.api.utils.log.Logger;
 import org.sonar.api.utils.log.Loggers;
@@ -19,9 +20,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
+import java.util.SortedMap;
 
 public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
     private static final Logger LOG = Loggers.get(SimpleCovRcovJsonParserImpl.class);
+
+    private CoverageSettings settings;
+
+    public SimpleCovRcovJsonParserImpl(CoverageSettings settings) {
+        this.settings = settings;
+    }
 
     public Map<String, CoverageMeasuresBuilder> parse(File file) throws IOException {
         CoverageReport coverageReport = readAndParseReportFile(file);
@@ -43,10 +51,16 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
     }
 
     private Map<String, CoverageMeasuresBuilder> processCoverageReport(CoverageReport coverageReport) {
-        if (coverageReport.hasSeveralReporters()) {
-            LOG.warn("Coverage report has several reporters! Notice, please, that only the first one will be considered by Sonar!");
-        }
-        return processReporter(coverageReport.getFirstReporter());
+        Map<String, CoverageMeasuresBuilder> coveredFiles = Maps.newHashMap();
+        coverageReport.getReporters()
+                .stream()
+                .filter(reporter -> shouldProcessReporterWithName(reporter.getName()))
+                .forEach(reporter -> processReporter(reporter, coveredFiles));
+        return coveredFiles;
+    }
+
+    private Boolean shouldProcessReporterWithName(String reporterName) {
+        return getSettings().processAllSuites() || getSettings().configuredSuitesNames().contains(reporterName);
     }
 
     private Reporter buildReporter(Map.Entry coverageMapEntry) {
@@ -69,29 +83,43 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
         return new ReporterItem(filename, marks);
     }
 
-    private Map<String, CoverageMeasuresBuilder> processReporter(Reporter reporter) {
-        Map<String, CoverageMeasuresBuilder> coveredFiles = Maps.newHashMap();
+    private Map<String, CoverageMeasuresBuilder> processReporter(Reporter reporter, Map<String, CoverageMeasuresBuilder> coveredFiles) {
         for (ReporterItem reporterItem : reporter.getItems()) {
-            CoverageMeasuresBuilder fileCoverage = processReporterItem(reporterItem);
+            String filename = reporterItem.getFilename();
+            CoverageMeasuresBuilder fileCoverage = coveredFiles.getOrDefault(filename, CoverageMeasuresBuilder.create());
+            processReporterItem(reporterItem, fileCoverage);
             coveredFiles.put(reporterItem.getFilename(), fileCoverage);
         }
         return coveredFiles;
     }
 
-    private CoverageMeasuresBuilder processReporterItem(ReporterItem reporterItem) {
-        CoverageMeasuresBuilder fileCoverage = CoverageMeasuresBuilder.create();
+    private void processReporterItem(ReporterItem reporterItem, CoverageMeasuresBuilder fileCoverage) {
         ArrayList<Mark> reporterItemMarks = (ArrayList<Mark>) reporterItem.getMarks();
         for (int markId = 0; markId < reporterItemMarks.size(); markId++) {
             Mark mark = reporterItemMarks.get(markId);
             processMark(mark, markId, fileCoverage);
         }
-        return fileCoverage;
     }
 
     private void processMark(Mark mark, Integer index, CoverageMeasuresBuilder fileCoverage) {
         if (mark.getIsNull()) { return; }
-        int intLine = mark.getAsLong().intValue();
+        int hitsCount = mark.getAsLong().intValue();
         int lineNumber = index + 1;
-        fileCoverage.setHits(lineNumber, intLine);
+        mergeHitsCounters(hitsCount, lineNumber, fileCoverage);
+    }
+
+    private void mergeHitsCounters(int hitsCount, int lineNumber, CoverageMeasuresBuilder fileCoverage) {
+        SortedMap<Integer, Integer> hitsByLine = Maps.newTreeMap();
+        hitsByLine.putAll(fileCoverage.getHitsByLine());
+        int oldHits = hitsByLine.getOrDefault(lineNumber, 0);
+        hitsByLine.put(lineNumber, oldHits + hitsCount);
+        fileCoverage.reset();
+        for(Map.Entry<Integer, Integer> entry : hitsByLine.entrySet()) {
+            fileCoverage.setHits(entry.getKey(), entry.getValue());
+        }
+    }
+
+    private CoverageSettings getSettings() {
+        return settings;
     }
 }
