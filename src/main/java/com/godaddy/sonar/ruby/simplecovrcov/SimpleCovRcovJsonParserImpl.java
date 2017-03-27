@@ -107,6 +107,18 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
         mergeHitsCounters(hitsCount, lineNumber, fileCoverage);
     }
 
+    /**
+     * Merges hits count of a specified line with already existing coverage results for a given file.
+     *
+     * Coverage information for one file could be presented in several suites. So we have to merge all results per file.
+     * Considering how {@link org.sonar.api.measures.CoverageMeasuresBuilder#setHits} works this a little bit
+     * tricky method is needed: if you already have added some coverage info for the particular line, then you can not
+     * add more information. Please, visit method source code for more understanding. It's very small :-)
+     *
+     * @param hitsCount
+     * @param lineNumber
+     * @param fileCoverage
+     */
     private void mergeHitsCounters(int hitsCount, int lineNumber, CoverageMeasuresBuilder fileCoverage) {
         SortedMap<Integer, Integer> hitsByLine = Maps.newTreeMap();
         hitsByLine.putAll(fileCoverage.getHitsByLine());
