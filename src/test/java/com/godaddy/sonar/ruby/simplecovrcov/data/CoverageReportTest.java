@@ -26,32 +26,4 @@ public class CoverageReportTest {
 
         assert coverageReport.getReporters().size() == 1;
     }
-
-    @Test
-    public void testHasSeveralReporters() {
-        CoverageReport coverageReport = new CoverageReport();
-        assertFalse(coverageReport.hasSeveralReporters());
-
-        coverageReport.addReporter(new Reporter("RSpec"));
-        assertFalse(coverageReport.hasSeveralReporters());
-
-        coverageReport.addReporter(new Reporter("Minitest"));
-        assertTrue(coverageReport.hasSeveralReporters());
-    }
-
-    @Test
-    public void testGetFirstReporter() {
-        CoverageReport coverageReport = new CoverageReport();
-
-        Reporter reporter = coverageReport.getFirstReporter();
-        assert reporter.getName().equals("null");
-
-        coverageReport.addReporter(new Reporter("RSpec"));
-        Reporter reporter2 = coverageReport.getFirstReporter();
-        assert reporter2.getName().equals("RSpec");
-
-        coverageReport.addReporter(new Reporter("Minitest"));
-        Reporter reporter3 = coverageReport.getFirstReporter();
-        assert reporter3.getName().equals("RSpec");
-    }
 }
