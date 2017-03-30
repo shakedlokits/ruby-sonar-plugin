@@ -205,7 +205,7 @@ public class MetricfuYamlParser {
             }
         }
 
-        // if cane violations exist, parse the different kind of violations
+        // if cane violations exist, analyze the different kind of violations
         if (caneViolations != null) {
 
             // locate and push the cane complexity violations for the requested file
@@ -294,7 +294,7 @@ public class MetricfuYamlParser {
             }
         }
 
-        // if roodi problems exist, parse and save the corresponding problems
+        // if roodi problems exist, analyze and save the corresponding problems
         if (roodiProblems != null) {
 
             // iterate the roodi problems and select the corresponding problems
@@ -347,10 +347,10 @@ public class MetricfuYamlParser {
         }
 
         // if reek results exist and are loaded,
-        // parse and save corresponding results
+        // analyze and save corresponding results
         if (reekFiles != null) {
 
-            // iterate source files smell results and parse
+            // iterate source files smell results and analyze
             // the ones corresponding to the requested file
             for (Map<String, Object> resultFile : reekFiles) {
                 String file = safeString((String) resultFile.get(":file_path"));
@@ -403,7 +403,7 @@ public class MetricfuYamlParser {
             return reasons;
         }
 
-        // parse and load the flay reasons from the metricfu results if needed
+        // analyze and load the flay reasons from the metricfu results if needed
         if (flayReasons == null) {
             Map<String, Object> flay = (Map<String, Object>) metricfuResult.get(":flay");
             if (flay != null) {

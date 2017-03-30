@@ -56,7 +56,7 @@ public class MetricfuIssueSensor implements Sensor {
     }
 
     /**
-     * Analysis helper function used to parse specific given project
+     * Analysis helper function used to analyze specific given project
      * files and save their metrics into the SonarQube system
      *
      * @param file    the file to scan and report for

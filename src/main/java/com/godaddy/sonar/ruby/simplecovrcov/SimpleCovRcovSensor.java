@@ -22,7 +22,7 @@ import java.util.Map;
 public class SimpleCovRcovSensor implements Sensor {
     private static final Logger LOG = Loggers.get(SimpleCovRcovSensor.class);
 
-    private SimpleCovRcovJsonParser simpleCovRcovJsonParser;
+    private CoverageReportFileAnalyzer coverageReportFileAnalyzer;
     private Settings settings;
     private FileSystem fs;
     private PropertyDefinitions definitions;
@@ -35,11 +35,11 @@ public class SimpleCovRcovSensor implements Sensor {
      */
     public SimpleCovRcovSensor(Settings settings, FileSystem fs,
                                PathResolver pathResolver,
-                               SimpleCovRcovJsonParser simpleCovRcovJsonParser) {
+                               CoverageReportFileAnalyzer coverageReportFileAnalyzer) {
         this.settings = settings;
         this.definitions = settings.getDefinitions();
         this.fs = fs;
-        this.simpleCovRcovJsonParser = simpleCovRcovJsonParser;
+        this.coverageReportFileAnalyzer = coverageReportFileAnalyzer;
         this.pathResolver = pathResolver;
 
         String reportpath_prop = settings.getString(RubyPlugin.SIMPLECOVRCOV_REPORT_PATH_PROPERTY);
@@ -98,7 +98,7 @@ public class SimpleCovRcovSensor implements Sensor {
 
     private void calculateMetrics(List<InputFile> sourceFiles, File jsonFile, final SensorContext context) throws IOException {
         LOG.debug(jsonFile.toString());
-        Map<String, CoverageMeasuresBuilder> jsonResults = simpleCovRcovJsonParser.parse(jsonFile);
+        Map<String, CoverageMeasuresBuilder> jsonResults = coverageReportFileAnalyzer.analyze(jsonFile);
 
         LOG.trace("jsonResults: " + jsonResults);
         File sourceFile = null;

@@ -25,7 +25,7 @@ public class SimpleCovRcovSensorTest {
     private IMocksControl mocksControl;
 
     private PathResolver pathResolver;
-    private SimpleCovRcovJsonParser simpleCovRcovJsonParser;
+    private CoverageReportFileAnalyzer coverageReportFileAnalyzer;
     private SimpleCovRcovSensor simpleCovRcovSensor;
     private SensorContext sensorContext;
 
@@ -37,10 +37,10 @@ public class SimpleCovRcovSensorTest {
         mocksControl = EasyMock.createControl();
         pathResolver = mocksControl.createMock(PathResolver.class);
         fs = mocksControl.createMock(FileSystem.class);
-        simpleCovRcovJsonParser = mocksControl.createMock(SimpleCovRcovJsonParser.class);
+        coverageReportFileAnalyzer = mocksControl.createMock(CoverageReportFileAnalyzer.class);
         settings = new Settings();
 
-        simpleCovRcovSensor = new SimpleCovRcovSensor(settings, fs, pathResolver, simpleCovRcovJsonParser);
+        simpleCovRcovSensor = new SimpleCovRcovSensor(settings, fs, pathResolver, coverageReportFileAnalyzer);
     }
 
     @Test
@@ -57,7 +57,7 @@ public class SimpleCovRcovSensorTest {
 
         expect(fs.baseDir()).andReturn(new File("bar"));
         expect(pathResolver.relativeFile(isA(File.class), isA(String.class))).andReturn(new File("foo"));
-//		expect(simpleCovRcovJsonParser.parse(jsonFile)).andThrow(new IOException());
+//		expect(coverageReportFileAnalyzer.analyze(jsonFile)).andThrow(new IOException());
 
         mocksControl.replay();
 

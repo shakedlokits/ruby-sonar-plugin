@@ -13,14 +13,14 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.SortedMap;
 
-public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
+public class CoverageReportFileAnalyzerImpl implements CoverageReportFileAnalyzer {
     private CoverageSettings settings;
 
-    public SimpleCovRcovJsonParserImpl(CoverageSettings settings) {
+    public CoverageReportFileAnalyzerImpl(CoverageSettings settings) {
         this.settings = settings;
     }
 
-    public Map<String, CoverageMeasuresBuilder> parse(File file) throws IOException {
+    public Map<String, CoverageMeasuresBuilder> analyze(File file) throws IOException {
         CoverageReport coverageReport = readAndParseReportFile(file);
         return processCoverageReport(coverageReport);
     }

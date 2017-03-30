@@ -11,23 +11,23 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-public class SimpleCovRcovJsonParserTest {
+public class CoverageReportFileAnalyzerTest {
     private final static String VALID_JSON_FILE_NAME = "src/test/resources/test-data/simple_cov_results.json";
     private final static String MULTIPLE_SUITES_FILE_NAME = "src/test/resources/test-data/simple_cov_results_multiple_suites.json";
 
-    private SimpleCovRcovJsonParserImpl parser = null;
+    private CoverageReportFileAnalyzerImpl analyzer = null;
     private MockedCoverageSettings coverageSettings;
 
     @Before
     public void setUp() throws Exception {
         this.coverageSettings = new MockedCoverageSettings();
-        parser = new SimpleCovRcovJsonParserImpl(this.coverageSettings);
+        analyzer = new CoverageReportFileAnalyzerImpl(this.coverageSettings);
     }
 
     @Test
     public void testParserWithValidJson() throws IOException {
         File reportFile = new File(VALID_JSON_FILE_NAME);
-        Map<String, CoverageMeasuresBuilder> coveredFiles = parser.parse(reportFile);
+        Map<String, CoverageMeasuresBuilder> coveredFiles = analyzer.analyze(reportFile);
 
         String coveredFile1 = "/project/source/subdir/file.rb";
         String coveredFile2 = "/project/source/subdir/file1.rb";
@@ -46,7 +46,7 @@ public class SimpleCovRcovJsonParserTest {
     public void testParserWithAllSuites() throws IOException {
         this.coverageSettings.setProcessAllSuitesFlag(true);
         File reportFile = new File(MULTIPLE_SUITES_FILE_NAME);
-        Map<String, CoverageMeasuresBuilder> coveredFiles = parser.parse(reportFile);
+        Map<String, CoverageMeasuresBuilder> coveredFiles = analyzer.analyze(reportFile);
         String coveredFile = "/project/source/subdir/file.rb";
         assertEquals(1, coveredFiles.size());
         assertEquals(coveredFiles.containsKey(coveredFile), true);
@@ -59,7 +59,7 @@ public class SimpleCovRcovJsonParserTest {
         this.coverageSettings.setProcessAllSuitesFlag(false);
         this.coverageSettings.setConfiguredSuitesNamesList(Collections.singletonList("RSpec"));
         File reportFile = new File(MULTIPLE_SUITES_FILE_NAME);
-        Map<String, CoverageMeasuresBuilder> coveredFiles = parser.parse(reportFile);
+        Map<String, CoverageMeasuresBuilder> coveredFiles = analyzer.analyze(reportFile);
         String coveredFile = "/project/source/subdir/file.rb";
         assertEquals(1, coveredFiles.size());
         assertEquals(coveredFiles.containsKey(coveredFile), true);
