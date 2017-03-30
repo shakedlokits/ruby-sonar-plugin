@@ -5,25 +5,15 @@ import com.godaddy.sonar.ruby.simplecovrcov.data.Mark;
 import com.godaddy.sonar.ruby.simplecovrcov.data.Reporter;
 import com.godaddy.sonar.ruby.simplecovrcov.data.ReporterItem;
 import com.google.common.collect.Maps;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import org.apache.commons.io.FileUtils;
 import org.sonar.api.measures.CoverageMeasuresBuilder;
-import org.sonar.api.utils.log.Logger;
-import org.sonar.api.utils.log.Loggers;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Map;
 import java.util.SortedMap;
 
 public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
-    private static final Logger LOG = Loggers.get(SimpleCovRcovJsonParserImpl.class);
-
     private CoverageSettings settings;
 
     public SimpleCovRcovJsonParserImpl(CoverageSettings settings) {
