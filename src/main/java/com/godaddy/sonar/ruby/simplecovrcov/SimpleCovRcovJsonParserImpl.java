@@ -36,17 +36,7 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
     }
 
     private CoverageReport readAndParseReportFile(File file) throws IOException {
-        CoverageReport coverageReport = new CoverageReport();
-
-        String fileString = FileUtils.readFileToString(file, "UTF-8");
-
-        JsonParser parser = new JsonParser();
-        JsonObject resultJsonObject = parser.parse(fileString).getAsJsonObject();
-
-        for(Map.Entry coverageMapEntry : resultJsonObject.entrySet()){
-            coverageReport.addReporter(buildReporter(coverageMapEntry));
-        }
-        return coverageReport;
+        return new CoverageReportFileParser(file).parse();
     }
 
     private Map<String, CoverageMeasuresBuilder> processCoverageReport(CoverageReport coverageReport) {
@@ -60,26 +50,6 @@ public class SimpleCovRcovJsonParserImpl implements SimpleCovRcovJsonParser {
 
     private Boolean shouldProcessReporterWithName(String reporterName) {
         return getSettings().processAllSuites() || getSettings().configuredSuitesNames().contains(reporterName);
-    }
-
-    private Reporter buildReporter(Map.Entry coverageMapEntry) {
-        JsonObject coverageJsonObj = ((JsonObject)coverageMapEntry.getValue()).get("coverage").getAsJsonObject();
-        String reporterName = coverageMapEntry.getKey().toString();
-        Reporter reporter = new Reporter(reporterName);
-        for(Map.Entry reportItemMapEntry : coverageJsonObj.entrySet()) {
-            reporter.addItem(buildReporterItem(reportItemMapEntry));
-        }
-        return reporter;
-    }
-
-    private ReporterItem buildReporterItem(Map.Entry reporterItemMapEntry) {
-        String filename = reporterItemMapEntry.getKey().toString();
-        JsonArray marksJsonArr = ((JsonArray)reporterItemMapEntry.getValue());
-        Collection<Mark> marks = new ArrayList<>();
-        for(JsonElement marksEl : marksJsonArr) {
-            marks.add(new Mark(marksEl.toString(), marksEl.isJsonNull()));
-        }
-        return new ReporterItem(filename, marks);
     }
 
     private Map<String, CoverageMeasuresBuilder> processReporter(Reporter reporter, Map<String, CoverageMeasuresBuilder> coveredFiles) {
