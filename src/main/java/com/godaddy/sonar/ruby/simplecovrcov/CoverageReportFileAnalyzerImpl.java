@@ -5,6 +5,8 @@ import com.godaddy.sonar.ruby.simplecovrcov.data.Mark;
 import com.godaddy.sonar.ruby.simplecovrcov.data.Reporter;
 import com.godaddy.sonar.ruby.simplecovrcov.data.ReporterItem;
 import com.google.common.collect.Maps;
+import org.sonar.api.ExtensionPoint;
+import org.sonar.api.batch.BatchSide;
 import org.sonar.api.measures.CoverageMeasuresBuilder;
 
 import java.io.File;
@@ -13,6 +15,8 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.SortedMap;
 
+@BatchSide
+@ExtensionPoint
 public class CoverageReportFileAnalyzerImpl implements CoverageReportFileAnalyzer {
     private CoverageSettings settings;
 
