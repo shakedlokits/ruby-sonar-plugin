@@ -6,7 +6,7 @@
 	<groupId>com.godaddy.sonar</groupId>
 	<artifactId>sonar-ruby-plugin</artifactId>
 	<packaging>sonar-plugin</packaging>
-	<version>1.4.2</version>
+	<version>2.4.2</version>
 
 	<name>Sonar Ruby Plugin</name>
 	<description>Plugin to report ruby code coverage into sonar</description>

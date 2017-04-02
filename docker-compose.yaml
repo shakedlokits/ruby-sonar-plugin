@@ -1,5 +1,5 @@
 sonarqube:
-  image: sonarqube:5.6.3
+  image: sonarqube:6.1
   volumes:
     - ./target:/opt/sonarqube/extensions/plugins
   ports:

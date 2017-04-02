@@ -101,7 +101,7 @@ We referenced the [Java Sonar Plugin](https://github.com/SonarSource/sonar-java)
 
 ## Tool Versions
 This plugin has been tested with the following dependency versions:
-* [SonarQube](http://www.sonarqube.org/downloads/) 5.6.3 LTS
+* [SonarQube](http://www.sonarqube.org/downloads/) 6.1
 * SonarQube Runner 2.7 (or newer)
 * metric_fu gem version 4.12.0 (latest at time of edit)
 * simplecov 0.12.0
