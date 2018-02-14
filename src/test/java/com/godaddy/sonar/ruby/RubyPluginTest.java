@@ -1,7 +1,7 @@
 package com.godaddy.sonar.ruby;
 
 import com.godaddy.sonar.ruby.core.Ruby;
-import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
+// import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
 import com.godaddy.sonar.ruby.simplecovrcov.CoverageReportFileAnalyzerImpl;
@@ -23,7 +23,7 @@ public class RubyPluginTest {
         assertTrue(extensions.contains(Ruby.class));
         assertTrue(extensions.contains(SimpleCovRcovSensor.class));
         assertTrue(extensions.contains(CoverageReportFileAnalyzerImpl.class));
-        assertTrue(extensions.contains(RubySourceCodeColorizer.class));
+        // assertTrue(extensions.contains(RubySourceCodeColorizer.class));
         assertTrue(extensions.contains(RubySensor.class));
         assertTrue(extensions.contains(MetricfuComplexitySensor.class));
         assertTrue(extensions.contains(SonarWayProfile.class));

@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonar.buildVersion>5.5</sonar.buildVersion>
+		<sonar.buildVersion>6.7</sonar.buildVersion>
         <!--FIXME: update batch version to build version once available-->
         <sonar.sonarBatchVersion>5.4</sonar.sonarBatchVersion>
 		<jdk.min.version>1.6</jdk.min.version>
