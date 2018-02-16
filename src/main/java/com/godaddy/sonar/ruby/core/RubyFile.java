@@ -88,7 +88,7 @@ public class RubyFile extends Resource {
     }
 
     public String getQualifier() {
-        return Qualifiers.CLASS;
+        return Qualifiers.FILE;
     }
 
     public boolean matchFilePattern(String antPattern) {
@@ -113,11 +113,4 @@ public class RubyFile extends Resource {
                 + ", getKey()=" + getKey() + ", getId()=" + getId() + ", getPath()=" + getPath() + ", getEffectiveKey()="
                 + getEffectiveKey() + ", isExcluded()=" + isExcluded() + "]\n";
     }
-
-//    @Override
-//    public String toString()
-//    {
-//        return new ToStringBuilder(this).append("key", getKey()).append("package", packageKey).append("longName", longName).toString();
-//    }
-
 }

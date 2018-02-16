@@ -5,12 +5,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.fs.internal.DefaultInputFile;
-import org.sonar.api.resources.Project;
+import org.sonar.api.batch.fs.internal.TestInputFileBuilder;
 import org.sonar.api.resources.Qualifiers;
 import org.sonar.api.resources.Scopes;
 
 import java.io.File;
-import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,14 +22,10 @@ public class RubyFileTest {
 
     @Before
     public void setUp() {
-        Project project = new Project("test project");
-        project.setLanguage(LanguageRuby.INSTANCE);
-
         File file = new File(SOURCE_FILE);
         List<InputFile> sourceDirs = new ArrayList<InputFile>();
 
-        DefaultInputFile difFile = new DefaultInputFile(project.getKey(), file.getParent());
-        difFile.setModuleBaseDir(FileSystems.getDefault().getPath("/"));
+        DefaultInputFile difFile = new TestInputFileBuilder("test project",  file.getParent()).build();
         sourceDirs.add(difFile);
 
         rubyFile = new RubyFile(file, sourceDirs);
@@ -87,18 +82,11 @@ public class RubyFileTest {
 
     @Test
     public void testGetQualifier() {
-        assertEquals(Qualifiers.CLASS, rubyFile.getQualifier());
+        assertEquals(Qualifiers.FILE, rubyFile.getQualifier());
     }
 
     @Test
     public void testMatchFilePatternString() {
         assertTrue(rubyFile.matchFilePattern("source.file.rb"));
     }
-
-//	@Test
-//	public void testToString() {
-//		System.out.println(rubyFile.toString());
-//		assertTrue(rubyFile.toString().contains("key=source.file,package=source,longName=source.file"));
-//	}
-
 }
