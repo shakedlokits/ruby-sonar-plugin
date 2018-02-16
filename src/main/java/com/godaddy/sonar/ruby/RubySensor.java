@@ -45,12 +45,11 @@ public class RubySensor implements Sensor {
     protected void computeBaseMetrics(SensorContext sensorContext) {
         Reader reader = null;
         List<InputFile> inputFiles = Lists.newArrayList(fileSystem.inputFiles(fileSystem.predicates().hasLanguage(Ruby.KEY)));
-
         for (InputFile inputFile : inputFiles) {
             try {
                 reader = new StringReader(FileUtils.readFileToString(inputFile.file(), fileSystem.encoding().name()));
                 Source source = new Source(reader, new RubyRecognizer());
-                //context.<String>newMeasure().on(inputFile).forMetric(measure.getMetric()).withValue(measure.getValue()).save();
+
                 sensorContext.<Integer>newMeasure().on(inputFile).forMetric(CoreMetrics.NCLOC).withValue(source.getMeasure((Metric.LINES_OF_CODE))).save();
 
                 int numCommentLines = CommentCountParser.countLinesOfComment(inputFile.file());

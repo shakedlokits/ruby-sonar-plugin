@@ -1,6 +1,6 @@
 package com.godaddy.sonar.ruby;
 
-import com.godaddy.sonar.ruby.core.LanguageRuby;
+import com.godaddy.sonar.ruby.core.Ruby;
 import org.easymock.EasyMock;
 import org.easymock.IAnswer;
 import org.easymock.IMocksControl;
@@ -11,10 +11,10 @@ import org.sonar.api.batch.fs.*;
 import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.fs.internal.DefaultInputFile;
 import org.sonar.api.batch.fs.internal.TestInputFileBuilder;
-import org.sonar.api.batch.sensor.measure.internal.DefaultMeasure;
+import org.sonar.api.batch.sensor.internal.SensorContextTester;
 import org.sonar.api.config.Settings;
 import org.sonar.api.config.internal.MapSettings;
-import org.sonar.api.measures.Metric;
+import org.sonar.api.measures.CoreMetrics;
 import org.sonar.api.resources.Project;
 
 import java.io.File;
@@ -36,6 +36,7 @@ public class RubySensorTest {
     private Project project;
     private List<File> sourceDirs;
     private List<File> files;
+    private File baseDir;
 
     private Settings settings;
     private FileSystem fs;
@@ -53,8 +54,9 @@ public class RubySensorTest {
 
         sensorContext = mocksControl.createMock(SensorContext.class);
 
+        baseDir = FileSystems.getDefault().getPath(INPUT_SOURCE_DIR).toFile();
         sourceDirs = new ArrayList<File>();
-        sourceDirs.add(new File(INPUT_SOURCE_DIR));
+        sourceDirs.add(baseDir);
         files = new ArrayList<File>();
         files.add(new File(INPUT_SOURCE_FILE));
 
@@ -72,7 +74,7 @@ public class RubySensorTest {
 
     @Test
     public void testShouldExecuteOnProject() {
-        RubySensor sensor = new RubySensor(settings, fs);
+        RubySensor sensor = new RubySensor                                                                          (settings, fs);
 
         expect(fs.predicates()).andReturn(filePredicates).times(1);
         expect(fs.hasFiles(isA(FilePredicate.class))).andReturn(true).times(1);
@@ -84,35 +86,31 @@ public class RubySensorTest {
         mocksControl.verify();
     }
 
-//    @Test
-//    public void testExecute() {
-//        RubySensor sensor = new RubySensor(settings, fs);
-//
-//        DefaultMeasure<Integer> measure = new DefaultMeasure<Integer>();
-//        List<InputFile> inputFiles = new ArrayList<InputFile>();
-//        File aFile = new File(INPUT_SOURCE_FILE);
-//        DefaultInputFile difFile = new TestInputFileBuilder("test project", FileSystems.getDefault().getPath(INPUT_SOURCE_DIR).toFile(), aFile).build();//new TestInputFileBuilder("test project", FileSystems.getDefault().getPath(".").toFile(), new File(INPUT_SOURCE_FILE)).build();
-//
-//        inputFiles.add(difFile);
-//
-//        // EasyMock does not work with reference parameters. A custom test class may have to be created if we want to keep this test.
-////        expect(sensorContext.newMeasure().on(isA(InputFile.class)).forMetric(isA(Metric.class)).withValue(isA(Integer.class)).save()).andAnswer(
-////                new IAnswer<DefaultMeasure>() {
-////                    @Override
-////                    public DefaultMeasure<Integer> answer() throws Throwable {
-////                        return measure;
-////                    }
-////                }).times(4);
-//        expect(fs.predicates()).andReturn(filePredicates).times(1);
-//        expect(filePredicates.hasLanguage(eq("ruby"))).andReturn(filePredicate).times(1);
-//        expect(fs.inputFiles(isA(FilePredicate.class))).andReturn(inputFiles).times(1);
-//        expect(fs.encoding()).andReturn(StandardCharsets.UTF_8).times(1);
-//
-//        mocksControl.replay();
-//
-//        sensor.execute(sensorContext);
-//        mocksControl.verify();
-//    }
+    @Test
+    public void testExecute() {
+        RubySensor sensor = new RubySensor(settings, fs);
+        File aFile = new File(INPUT_SOURCE_FILE);
+        DefaultInputFile difFile = new TestInputFileBuilder("test project", baseDir, aFile).setLanguage(Ruby.KEY).build();
+        List<InputFile> inputFiles = new ArrayList<InputFile>();
+        SensorContextTester testContext = SensorContextTester.create(baseDir);
+        testContext.fileSystem().add(difFile);
+
+        inputFiles.add(difFile);
+
+        expect(fs.predicates()).andReturn(filePredicates).times(1);
+        expect(filePredicates.hasLanguage(eq("ruby"))).andReturn(filePredicate).times(1);
+        expect(fs.inputFiles(isA(FilePredicate.class))).andReturn(inputFiles).times(1);
+        expect(fs.encoding()).andReturn(StandardCharsets.UTF_8).times(1);
+
+        mocksControl.replay();
+        sensor.execute(testContext);
+        mocksControl.verify();
+
+        assertEquals(testContext.measure(difFile.key(), CoreMetrics.NCLOC).value().intValue(), 17);
+        assertEquals(testContext.measure(difFile.key(), CoreMetrics.COMMENT_LINES).value().intValue(), 4);
+        assertEquals(testContext.measure(difFile.key(), CoreMetrics.FILES).value().intValue(), 1);
+        assertEquals(testContext.measure(difFile.key(), CoreMetrics.CLASSES).value().intValue(), 1);
+    }
 
     @Test
     public void testToString() {
