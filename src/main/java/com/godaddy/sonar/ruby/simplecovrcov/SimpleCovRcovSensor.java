@@ -1,11 +1,13 @@
 package com.godaddy.sonar.ruby.simplecovrcov;
 
 import com.godaddy.sonar.ruby.RubyPlugin;
+import com.godaddy.sonar.ruby.core.Ruby;
 import com.google.common.collect.Lists;
-import org.sonar.api.batch.Sensor;
-import org.sonar.api.batch.SensorContext;
+import org.sonar.api.batch.sensor.Sensor;
+import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.batch.sensor.SensorDescriptor;
 import org.sonar.api.config.PropertyDefinitions;
 import org.sonar.api.config.Settings;
 import org.sonar.api.measures.CoverageMeasuresBuilder;
@@ -49,21 +51,23 @@ public class SimpleCovRcovSensor implements Sensor {
     }
 
     public boolean shouldExecuteOnProject(Project project) {
-        // return Ruby.KEY.equals(fs.languages());
         // This sensor is executed only when there are Ruby files
         return fs.hasFiles(fs.predicates().hasLanguage("ruby"));
     }
 
-    public void analyse(Project project, SensorContext context) {
+    public void describe(SensorDescriptor descriptor){
+        descriptor.onlyOnLanguage(Ruby.KEY).name("Ruby Rcov Sensor").onlyOnFileType(InputFile.Type.MAIN);
+    }
+
+    public void execute(SensorContext context) {
         File report = pathResolver.relativeFile(fs.baseDir(), reportPath);
         LOG.info("Calling analyse for report results: " + report.getPath());
         if (!report.isFile()) {
             LOG.warn("SimpleCovRcov report not found at {}", report);
             return;
         }
-        // printReportFile(fileName);
 
-        List<InputFile> sourceFiles = Lists.newArrayList(fs.inputFiles(fs.predicates().hasLanguage("ruby")));
+        List<InputFile> sourceFiles = Lists.newArrayList(fs.inputFiles(fs.predicates().hasLanguage(Ruby.KEY)));
 
         try {
             LOG.info("Calling Calculate Metrics");
@@ -113,12 +117,12 @@ public class SimpleCovRcovSensor implements Sensor {
                 if (fileCoverage != null) {
                     for (Measure measure : fileCoverage.createMeasures()) {
                         LOG.debug("    Saving measure " + measure.getMetricKey());
-                        context.saveMeasure(inputFile, measure);
+                        context.<String>newMeasure().on(inputFile).forMetric(measure.getMetric()).withValue(measure.getValue()).save();
                     }
                 }
 
             } catch (Exception e) {
-                if (sourceFile != null) {
+                if (inputFile != null) {
                     LOG.error("Unable to save metrics for file: " + sourceFile.getName(), e);
                 } else {
                     LOG.error("Unable to save metrics.", e);

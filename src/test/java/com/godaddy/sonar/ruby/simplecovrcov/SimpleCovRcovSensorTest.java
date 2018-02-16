@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.config.Settings;
+import org.sonar.api.config.internal.MapSettings;
 import org.sonar.api.resources.Project;
 import org.sonar.api.scan.filesystem.PathResolver;
 
@@ -38,7 +39,7 @@ public class SimpleCovRcovSensorTest {
         pathResolver = mocksControl.createMock(PathResolver.class);
         fs = mocksControl.createMock(FileSystem.class);
         coverageReportFileAnalyzer = mocksControl.createMock(CoverageReportFileAnalyzer.class);
-        settings = new Settings();
+        settings = new MapSettings();
 
         simpleCovRcovSensor = new SimpleCovRcovSensor(settings, fs, pathResolver, coverageReportFileAnalyzer);
     }
@@ -61,7 +62,7 @@ public class SimpleCovRcovSensorTest {
 
         mocksControl.replay();
 
-        simpleCovRcovSensor.analyse(new Project("key_name"), sensorContext);
+        simpleCovRcovSensor.execute(sensorContext);
         mocksControl.verify();
 
         assertTrue(true);
