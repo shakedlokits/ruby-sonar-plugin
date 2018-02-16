@@ -64,7 +64,7 @@ public class RubyPackageTest {
 
     @Test
     public void testGetQualifier() {
-        assertEquals(Qualifiers.PACKAGE, rubyPackage.getQualifier());
+        assertEquals(Qualifiers.PROJECT, rubyPackage.getQualifier());
     }
 
 }
