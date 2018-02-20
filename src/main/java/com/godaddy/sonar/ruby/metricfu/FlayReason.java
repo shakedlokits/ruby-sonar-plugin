@@ -4,6 +4,37 @@ import java.util.ArrayList;
 
 public class FlayReason {
 
+    private String reason;
+    private ArrayList<Match> matches = new ArrayList<Match>();
+
+    public FlayReason(String reason) {
+        this.reason = reason;
+    }
+
+    public FlayReason() {
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public ArrayList<Match> getMatches() {
+        return matches;
+    }
+
+    public void addMatch(String file, Integer start) {
+        matches.add(new Match(file, start));
+    }
+
+    @Override
+    public String toString() {
+        return "reason: " + reason;
+    }
+
     public class Match {
         private String file;
         private Integer start;
@@ -46,36 +77,5 @@ public class FlayReason {
         public void setLines(Integer lines) {
             this.lines = lines;
         }
-    }
-
-    private String reason;
-    private ArrayList<Match> matches = new ArrayList<Match>();
-
-    public FlayReason(String reason) {
-        this.reason = reason;
-    }
-
-    public FlayReason() {
-    }
-
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
-
-    public ArrayList<Match> getMatches() {
-        return matches;
-    }
-
-    public void addMatch(String file, Integer start) {
-        matches.add(new Match(file, start));
-    }
-
-    @Override
-    public String toString() {
-        return "reason: " + reason;
     }
 }

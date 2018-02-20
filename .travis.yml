@@ -1,0 +1,30 @@
+# general configuration
+sudo: required
+language: java
+services:
+  - docker
+jdk:
+  - oraclejdk8
+
+# install docker compose
+env:
+  COMPOSE_VERSION: 1.11.2
+before_install:
+  - curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+# build plugin and provision testing services and environment
+install: mvn install
+before_script:
+  - docker-compose up -d
+  - chmod +x run_test.sh
+
+# run unit tests and integration tests
+script:
+  - mvn test
+  - ./run_test.sh
+
+# analyze code coverage
+after_success:
+  - mvn clean test jacoco:report coveralls:report

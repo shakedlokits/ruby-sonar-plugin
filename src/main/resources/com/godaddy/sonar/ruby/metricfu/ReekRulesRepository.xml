@@ -114,6 +114,7 @@
     <rule>
         <key>Duplication</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Duplication]]></name>
         <description>
             <![CDATA[
@@ -127,6 +128,7 @@
     <rule>
         <key>DuplicateMethodCall</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Duplicate Method Call]]></name>
         <description>
             <![CDATA[
@@ -140,6 +142,7 @@
     <rule>
         <key>FeatureEnvy</key>
         <priority>MAJOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Feature Envy]]></name>
         <description>
             <![CDATA[
@@ -219,6 +222,7 @@ end
     <rule>
         <key>LongYieldList</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Long Yield List]]></name>
         <description>
             <![CDATA[
@@ -291,6 +295,7 @@ end
     <rule>
         <key>RepeatedConditional</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Repeated Conditional]]></name>
         <description>
             <![CDATA[
@@ -306,6 +311,7 @@ end
     <rule>
         <key>SimulatedPolymorphism</key>
         <priority>MAJOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Simulated Polymorphism]]></name>
         <description>
             <![CDATA[
@@ -342,6 +348,7 @@ end
     <rule>
         <key>TooManyMethods</key>
         <priority>MAJOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Too Many Methods]]></name>
         <description>
             <![CDATA[
@@ -394,6 +401,7 @@ end
     <rule>
         <key>UncommunicativeName</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Uncommunicative Name]]></name>
         <description>
             <![CDATA[
@@ -411,6 +419,7 @@ end
     <rule>
         <key>UncommunicativeMethodName</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Uncommunicative Method Name]]></name>
         <description>
             <![CDATA[
@@ -428,6 +437,7 @@ end
     <rule>
         <key>UncommunicativeModuleName</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Uncommunicative Module Name]]></name>
         <description>
             <![CDATA[
@@ -445,6 +455,7 @@ end
     <rule>
         <key>UncommunicativeParameterName</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Uncommunicative Parameter Name]]></name>
         <description>
             <![CDATA[
@@ -462,6 +473,7 @@ end
     <rule>
         <key>UncommunicativeVariableName</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Uncommunicative Variable Name]]></name>
         <description>
             <![CDATA[
@@ -479,6 +491,7 @@ end
     <rule>
         <key>UnusedParameters</key>
         <priority>MINOR</priority>
+        <type>BUG</type>
         <name><![CDATA[Unused Parameters]]></name>
         <description>
             <![CDATA[

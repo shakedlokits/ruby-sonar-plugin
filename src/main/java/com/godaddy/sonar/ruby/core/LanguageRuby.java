@@ -11,11 +11,6 @@ public class LanguageRuby extends AbstractLanguage {
 
     public static final LanguageRuby INSTANCE = new LanguageRuby("ruby");
 
-    public LanguageRuby(String key) {
-        super(key);
-    }
-
-
     /**
      * Java key
      */
@@ -35,6 +30,11 @@ public class LanguageRuby extends AbstractLanguage {
      * Java files knows suffixes
      */
     public static final String[] SUFFIXES = {".rb", ".ruby"};
+
+
+    public LanguageRuby(String key) {
+        super(key);
+    }
 
     /**
      * Default constructor

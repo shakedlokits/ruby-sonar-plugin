@@ -56,6 +56,6 @@ public class RubyPackage extends Resource {
 
     @Override
     public String getQualifier() {
-        return Qualifiers.PACKAGE;
+        return Qualifiers.PROJECT;
     }
 }

@@ -1,10 +1,10 @@
 package com.godaddy.sonar.ruby;
 
 import com.godaddy.sonar.ruby.core.Ruby;
-import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
+// import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
-import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
+import com.godaddy.sonar.ruby.simplecovrcov.CoverageReportFileAnalyzerImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
 import org.junit.Test;
 
@@ -22,8 +22,8 @@ public class RubyPluginTest {
         assertTrue(extensions.size() > 0);
         assertTrue(extensions.contains(Ruby.class));
         assertTrue(extensions.contains(SimpleCovRcovSensor.class));
-        assertTrue(extensions.contains(SimpleCovRcovJsonParserImpl.class));
-        assertTrue(extensions.contains(RubySourceCodeColorizer.class));
+        assertTrue(extensions.contains(CoverageReportFileAnalyzerImpl.class));
+        // assertTrue(extensions.contains(RubySourceCodeColorizer.class));
         assertTrue(extensions.contains(RubySensor.class));
         assertTrue(extensions.contains(MetricfuComplexitySensor.class));
         assertTrue(extensions.contains(SonarWayProfile.class));

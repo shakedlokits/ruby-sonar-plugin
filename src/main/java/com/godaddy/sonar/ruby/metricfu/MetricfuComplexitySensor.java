@@ -73,7 +73,7 @@ public class MetricfuComplexitySensor implements Sensor {
     }
 
     /**
-     * Analysis helper function used to parse specific given project
+     * Analysis helper function used to analyze specific given project
      * files and save their metrics into the SonarQube system
      *
      * @param inputFile      the file to scan and report for
@@ -88,7 +88,7 @@ public class MetricfuComplexitySensor implements Sensor {
         int fileTotalComplexity = 0;
         int numberOfMethods = 0;
 
-        // parse and fetch cane or saikuro file complexities correspondingly
+        // analyze and fetch cane or saikuro file complexities correspondingly
         // to the set complexity type
         if (complexityType.equalsIgnoreCase(COMPLEXITY_CANE)) {
 

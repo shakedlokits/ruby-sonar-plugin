@@ -1,10 +1,11 @@
 package com.godaddy.sonar.ruby;
 
 import com.godaddy.sonar.ruby.core.Ruby;
-import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
+// import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
-import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
+import com.godaddy.sonar.ruby.simplecovrcov.DefaultCoverageSettings;
+import com.godaddy.sonar.ruby.simplecovrcov.CoverageReportFileAnalyzerImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
 import org.sonar.api.CoreProperties;
 import org.sonar.api.Properties;
@@ -32,6 +33,8 @@ public final class RubyPlugin extends SonarPlugin {
     public static final String NAME_REPOSITORY_ROODI = "Roodi";
 
     public static final String SIMPLECOVRCOV_REPORT_PATH_PROPERTY = "sonar.simplecovrcov.reportPath";
+    public static final String COVERAGE_TEST_SUITES_PROPERTY = "sonar.ruby.coverage.testSuites";
+
     public static final String METRICFU_REPORT_PATH_PROPERTY = "sonar.metricfu.reportPath";
     public static final String METRICFU_COMPLEXITY_METRIC_PROPERTY = "sonar.metricfu.complexityMetric";
 
@@ -40,10 +43,11 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(Ruby.class);
         // FIXME add back code duplication metrics once it's fixed
         // extensions.add(RubyCPDMapping.class);
+        extensions.add(DefaultCoverageSettings.class);
         extensions.add(SimpleCovRcovSensor.class);
-        extensions.add(SimpleCovRcovJsonParserImpl.class);
+        extensions.add(CoverageReportFileAnalyzerImpl.class);
         extensions.add(MetricfuYamlParser.class);
-        extensions.add(RubySourceCodeColorizer.class);
+        // extensions.add(RubySourceCodeColorizer.class);
         extensions.add(RubySensor.class);
         extensions.add(MetricfuComplexitySensor.class);
         // extensions.add(MetricfuDuplicationSensor.class);
@@ -75,6 +79,20 @@ public final class RubyPlugin extends SonarPlugin {
                 .onQualifiers(Qualifiers.PROJECT)
                 .build();
         extensions.add(simplecovrcovReportPath);
+
+        PropertyDefinition coverageTestSuitesProperty = PropertyDefinition.builder(COVERAGE_TEST_SUITES_PROPERTY)
+                .category(CoreProperties.CATEGORY_CODE_COVERAGE)
+                .subCategory("Ruby Coverage")
+                .name("Coverage test suites")
+                .description(String.join(
+                        "The following values are expected:\n",
+                        "- not defined or all => aggregate all\n",
+                        "- comma delimited test suite names => will be aggregated only the selected suites"
+                ))
+                .defaultValue("all")
+                .onQualifiers(Qualifiers.PROJECT)
+                .build();
+        extensions.add(coverageTestSuitesProperty);
 
         List<String> options = Arrays.asList("Saikuro", "Cane");
 

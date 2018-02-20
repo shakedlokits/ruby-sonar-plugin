@@ -8,20 +8,24 @@ import org.junit.Test;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.fs.internal.DefaultInputFile;
 import org.sonar.api.batch.fs.internal.FileMetadata;
+import org.sonar.api.batch.fs.internal.TestInputFileBuilder;
 import org.sonar.api.batch.sensor.internal.DefaultSensorDescriptor;
 import org.sonar.api.batch.sensor.internal.SensorContextTester;
 import org.sonar.api.config.Settings;
+import org.sonar.api.config.internal.MapSettings;
 import org.sonar.api.measures.CoreMetrics;
 import org.sonar.api.utils.log.LogTester;
 import org.sonar.api.utils.log.LoggerLevel;
 
 import java.io.File;
+import java.io.FileReader;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 
 
 public class MetricfuComplexitySensorTest {
@@ -53,7 +57,7 @@ public class MetricfuComplexitySensorTest {
 
         // set mock project setting, default analysis
         // data(saikuro) and metricfu report address
-        settings = new Settings();
+        settings = new MapSettings();
         settings.setProperty(RubyPlugin.METRICFU_COMPLEXITY_METRIC_PROPERTY, "saikuro");
         settings.setProperty(RubyPlugin.METRICFU_REPORT_PATH_PROPERTY, YML_SYNTAX_FILE_NAME);
 
@@ -87,14 +91,19 @@ public class MetricfuComplexitySensorTest {
     private InputFile inputFile(String relativePath, InputFile.Type type) {
 
         // generate the default input file by the relative path and type given
-        DefaultInputFile inputFile = new DefaultInputFile("modulekey", relativePath)
+        DefaultInputFile inputFile = new TestInputFileBuilder("modulekey",  relativePath)
                 .setModuleBaseDir(moduleBaseDir.toPath())
                 .setLanguage("ruby")
-                .setType(type);
+                .setType(type).build();
 
         // set the corresponding file metadata and add to context file system
-        inputFile.initMetadata(new FileMetadata().readMetadata(inputFile.file(), Charsets.UTF_8));
-        context.fileSystem().add(inputFile);
+        try {
+            inputFile.setMetadata(new FileMetadata().readMetadata(inputFile.inputStream(), Charsets.UTF_8, inputFile.absolutePath()));
+            context.fileSystem().add(inputFile);
+        }
+        catch(Exception e){
+            fail();
+        }
 
         return inputFile;
     }
