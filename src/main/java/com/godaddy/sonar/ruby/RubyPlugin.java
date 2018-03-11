@@ -4,9 +4,15 @@ import com.godaddy.sonar.ruby.core.Ruby;
 import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
+
 import com.godaddy.sonar.ruby.simplecovrcov.DefaultCoverageSettings;
 import com.godaddy.sonar.ruby.simplecovrcov.CoverageReportFileAnalyzerImpl;
+import com.godaddy.sonar.ruby.rubocop.CopsRulesDefinition;
+import com.godaddy.sonar.ruby.rubocop.RubocopSensor;
+import com.godaddy.sonar.ruby.rubocop.parsing.impl.DefaultReportJsonParser;
+import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
+
 import org.sonar.api.CoreProperties;
 import org.sonar.api.Properties;
 import org.sonar.api.PropertyType;
@@ -32,11 +38,16 @@ public final class RubyPlugin extends SonarPlugin {
     public static final String KEY_REPOSITORY_ROODI = "roodi";
     public static final String NAME_REPOSITORY_ROODI = "Roodi";
 
+    public static final String KEY_REPOSITORY_RUBOCOP = "rubocop";
+    public static final String NAME_REPOSITORY_RUBOCOP = "Rubocop";
+
     public static final String SIMPLECOVRCOV_REPORT_PATH_PROPERTY = "sonar.simplecovrcov.reportPath";
     public static final String COVERAGE_TEST_SUITES_PROPERTY = "sonar.ruby.coverage.testSuites";
 
     public static final String METRICFU_REPORT_PATH_PROPERTY = "sonar.metricfu.reportPath";
     public static final String METRICFU_COMPLEXITY_METRIC_PROPERTY = "sonar.metricfu.complexityMetric";
+
+    public static final String RUBOCOP_REPORT_PATH_PROPERTY = "sonar.rubocop.reportPath";
 
     public List<Object> getExtensions() {
         List<Object> extensions = new ArrayList<Object>();
@@ -47,6 +58,8 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(SimpleCovRcovSensor.class);
         extensions.add(CoverageReportFileAnalyzerImpl.class);
         extensions.add(MetricfuYamlParser.class);
+        extensions.add(RubocopSensor.class);
+        extensions.add(DefaultReportJsonParser.class);
         extensions.add(RubySourceCodeColorizer.class);
         extensions.add(RubySensor.class);
         extensions.add(MetricfuComplexitySensor.class);
@@ -55,6 +68,7 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(CaneRulesDefinition.class);
         extensions.add(ReekRulesDefinition.class);
         extensions.add(RoodiRulesDefinition.class);
+        extensions.add(CopsRulesDefinition.class);
 
 
         // Profiles
@@ -80,6 +94,7 @@ public final class RubyPlugin extends SonarPlugin {
                 .build();
         extensions.add(simplecovrcovReportPath);
 
+
         PropertyDefinition coverageTestSuitesProperty = PropertyDefinition.builder(COVERAGE_TEST_SUITES_PROPERTY)
                 .category(CoreProperties.CATEGORY_CODE_COVERAGE)
                 .subCategory("Ruby Coverage")
@@ -93,6 +108,16 @@ public final class RubyPlugin extends SonarPlugin {
                 .onQualifiers(Qualifiers.PROJECT)
                 .build();
         extensions.add(coverageTestSuitesProperty);
+
+        PropertyDefinition rubocopReportPathProperty = PropertyDefinition.builder(RUBOCOP_REPORT_PATH_PROPERTY)
+                .category(CoreProperties.CATEGORY_CODE_COVERAGE)
+                .subCategory("Ruby Coverage")
+                .name("Rubocop Report path")
+                .description("Path (absolute or relative) to Rubocop json report file.")
+                .defaultValue("tmp/rubocop/report.json")
+                .onQualifiers(Qualifiers.PROJECT)
+                .build();
+        extensions.add(rubocopReportPathProperty);
 
         List<String> options = Arrays.asList("Saikuro", "Cane");
 
