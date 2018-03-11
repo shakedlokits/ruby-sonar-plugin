@@ -10,7 +10,6 @@ import com.godaddy.sonar.ruby.simplecovrcov.CoverageReportFileAnalyzerImpl;
 import com.godaddy.sonar.ruby.rubocop.CopsRulesDefinition;
 import com.godaddy.sonar.ruby.rubocop.RubocopSensor;
 import com.godaddy.sonar.ruby.rubocop.parsing.impl.DefaultReportJsonParser;
-import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovJsonParserImpl;
 import com.godaddy.sonar.ruby.simplecovrcov.SimpleCovRcovSensor;
 
 import org.sonar.api.CoreProperties;
