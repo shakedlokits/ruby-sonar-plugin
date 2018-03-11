@@ -2,7 +2,6 @@ package com.godaddy.sonar.ruby.rubocop.parsing.impl;
 
 import com.godaddy.sonar.ruby.rubocop.data.*;
 import com.godaddy.sonar.ruby.rubocop.parsing.ReportJsonParser;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
