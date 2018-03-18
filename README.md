@@ -2,7 +2,7 @@ SonarQube Ruby Plugin [![Build Status](https://travis-ci.org/shakedlokits/ruby-s
 =================
 
 ## Description
-This plugin enables publishing static and dynamic analysis reports of Ruby projects onto SonarQube 5.6.3+  
+This plugin enables publishing static and dynamic analysis reports of Ruby projects onto SonarQube 6.7+  
 
 The plugin currently supports the following services:
 * Lines of code, Number of classes, Comment precentage
