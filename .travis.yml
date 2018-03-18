@@ -8,7 +8,7 @@ jdk:
 
 # install docker compose
 env:
-  COMPOSE_VERSION: 1.11.2
+  COMPOSE_VERSION: 1.19.0
 before_install:
   - curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
@@ -22,6 +22,7 @@ before_script:
 
 # run unit tests and integration tests
 script:
+  - while [[ "$(docker-compose logs sonarqube | grep -c 'SonarQube is up')" -ne 1 ]]; do sleep 1; done
   - mvn test
   - ./run_test.sh
 
