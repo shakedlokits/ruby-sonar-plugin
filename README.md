@@ -11,7 +11,7 @@ The plugin currently supports the following services:
 * Code Coverage (line coverage)
 * Coding Style Violations
 
-It relies on standardized external tools: [SimpleCov](https://github.com/colszowka/simplecov), [SimpleCov-RCov](https://github.com/fguillen/simplecov-rcov) and [Metric_Fu](https://github.com/metricfu/metric_fu/) in order to make the analysis and report the metrics which are then in turn published to SonarQube.
+It relies on standardized external tools: [SimpleCov](https://github.com/colszowka/simplecov), [SimpleCov-RCov](https://github.com/fguillen/simplecov-rcov), [Metric_Fu](https://github.com/metricfu/metric_fu/) and [Rubocop](https://github.com/bbatsov/rubocop) in order to make the analysis and report the metrics which are then in turn published to SonarQube.
 
 ## Install
 1. Run `mvn install` to produce the `target/sonar-ruby-plugin-VERSION.jar` plugin file
@@ -45,8 +45,7 @@ end
 **Important:** Do not change the output directory for the simplecov-rcov report, leave it as default, or code coverage will not be reported.
 
 ##### Code Complexity
-In order for the plugin to report on code complexity, [metric_fu](https://github.com/metricfu/metric_fu/) needs to be ran against the ruby project,
-which will generate a metric report. Please see the [gem's homepage](https://github.com/metricfu/metric_fu/) for installation and usage instructions.  
+In order for the plugin to report on code complexity, [metric_fu](https://github.com/metricfu/metric_fu/) needs to be ran against the ruby project, which will generate a metric report. Please see the [gem's homepage](https://github.com/metricfu/metric_fu/) for installation and usage instructions.  
 
 **Important:**  We recommend using metric_fu by running `metric_fu -r --no-flog --no-flay --no-roodi --no-open` which would analyze and report all of the metrics supported by the plugin. Such as Saikuro/Cane coverage, Cane issues, Hostpots, Code smells and more..
 
@@ -87,7 +86,7 @@ Use the `sonar.ruby.coverage.testSuites` property to set the correct tests aggre
 
 **Important:** We recommend run rubocop as such `rubocop -f json -o tmp/rubocop/report.json`.
 
-##Future Plans
+## Future Plans
 * Code Duplication
 * Structural Analysis
 * Code Debt
@@ -111,6 +110,7 @@ This plugin has been tested with the following dependency versions:
 ## Authors
 * [Brian Clifton](https://github.com/bsclifton)
 * [Shaked Lokits](https://github.com/shakedlokits) - *Maintainer*
+* [Jared Wilkerson](https://github.com/lyrch)
 * [Serge Gernyak](https://github.com/sergio1990)
 * [Will Greenway](https://api.github.com/users/wpgreenway)
 * [Greg Allen](https://api.github.com/users/ggallen)
