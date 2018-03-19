@@ -90,7 +90,6 @@ public class RubocopSensorTest {
                     .setType(type)
                     .build();
 
-            System.out.println(moduleBaseDir.toString() + relativePath);
             inputFile.setMetadata(new FileMetadata().readMetadata(new FileReader(inputFile.absolutePath())));
             context.fileSystem().add(inputFile);
 

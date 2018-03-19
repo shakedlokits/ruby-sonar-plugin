@@ -42,6 +42,12 @@ public class RubySensor implements Sensor {
         computeBaseMetrics(context);
     }
 
+    /**
+     * Analysis helper function used on a Ruby project compute and save the folloing metrics
+     * into the SonarQube system: NCLOC, COMMENT_LINES, FILES, CLASSES
+     *
+     * @param sensorContext  the project sensor context
+     */
     protected void computeBaseMetrics(SensorContext sensorContext) {
         Reader reader = null;
         List<InputFile> inputFiles = Lists.newArrayList(fileSystem.inputFiles(fileSystem.predicates().hasLanguage(Ruby.KEY)));
