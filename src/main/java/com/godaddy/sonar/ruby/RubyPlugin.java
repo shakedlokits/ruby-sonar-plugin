@@ -1,7 +1,6 @@
 package com.godaddy.sonar.ruby;
 
 import com.godaddy.sonar.ruby.core.Ruby;
-import com.godaddy.sonar.ruby.core.RubySourceCodeColorizer;
 import com.godaddy.sonar.ruby.core.profiles.SonarWayProfile;
 import com.godaddy.sonar.ruby.metricfu.*;
 
@@ -59,7 +58,6 @@ public final class RubyPlugin extends SonarPlugin {
         extensions.add(MetricfuYamlParser.class);
         extensions.add(RubocopSensor.class);
         extensions.add(DefaultReportJsonParser.class);
-        extensions.add(RubySourceCodeColorizer.class);
         extensions.add(RubySensor.class);
         extensions.add(MetricfuComplexitySensor.class);
         // extensions.add(MetricfuDuplicationSensor.class);

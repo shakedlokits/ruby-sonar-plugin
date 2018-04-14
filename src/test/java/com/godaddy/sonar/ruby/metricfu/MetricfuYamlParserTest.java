@@ -1,14 +1,12 @@
 package com.godaddy.sonar.ruby.metricfu;
 
 import com.godaddy.sonar.ruby.RubyPlugin;
-import com.godaddy.sonar.ruby.core.LanguageRuby;
 import org.junit.Before;
 import org.junit.Test;
 import org.sonar.api.batch.fs.FileSystem;
 import org.sonar.api.batch.fs.internal.DefaultFileSystem;
-import org.sonar.api.config.Settings;
-import org.sonar.api.internal.apachecommons.lang.reflect.FieldUtils;
-import org.sonar.api.resources.Project;
+import org.sonar.api.config.internal.MapSettings;
+import org.apache.commons.lang.reflect.FieldUtils;
 import org.sonar.api.utils.log.LogTester;
 
 import java.io.File;
@@ -23,9 +21,9 @@ import static org.junit.Assert.assertTrue;
 public class MetricfuYamlParserTest {
     private final static String YML_SYNTAX_FILE_NAME = "/metricfu_report.yml";
 
-    private Settings settings;
+    private MapSettings settings;
     private FileSystem fs;
-    private Project project;
+    //private Project project;
 
     @org.junit.Rule
     public LogTester logTester = new LogTester();
@@ -33,9 +31,7 @@ public class MetricfuYamlParserTest {
     @Before
     public void setUp() throws Exception {
         fs = new DefaultFileSystem(new File("./src/test/resources/test-data"));
-        project = new Project("test project");
-        project.setLanguage(LanguageRuby.INSTANCE);
-        settings = new Settings();
+        settings = new MapSettings();
     }
 
     @Test

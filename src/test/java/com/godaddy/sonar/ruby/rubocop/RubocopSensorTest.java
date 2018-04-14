@@ -8,12 +8,14 @@ import org.junit.Test;
 import org.sonar.api.batch.fs.InputFile;
 import org.sonar.api.batch.fs.internal.DefaultInputFile;
 import org.sonar.api.batch.fs.internal.FileMetadata;
+import org.sonar.api.batch.fs.internal.TestInputFileBuilder;
 import org.sonar.api.batch.sensor.internal.SensorContextTester;
 import org.sonar.api.config.Settings;
-import com.google.common.base.Charsets;
 import org.sonar.api.batch.sensor.issue.Issue;
+import org.sonar.api.config.internal.MapSettings;
 
 import java.io.File;
+import java.io.FileReader;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -35,7 +37,7 @@ public class RubocopSensorTest {
     @SuppressWarnings("Duplicates")
     @Before
     public void setUp() throws Exception {
-        settings = new Settings();
+        settings = new MapSettings();
 
         context = SensorContextTester.create(moduleBaseDir);
         context.setSettings(settings);
@@ -81,16 +83,21 @@ public class RubocopSensorTest {
     private InputFile inputFile(String relativePath, InputFile.Type type) {
 
         // generate the default input file by the relative path and type given
-        DefaultInputFile inputFile = new DefaultInputFile("modulekey", relativePath)
-                .setModuleBaseDir(moduleBaseDir.toPath())
-                .setLanguage("ruby")
-                .setType(type);
+        try {
+            DefaultInputFile inputFile = new TestInputFileBuilder("modulekey", relativePath)
+                    .setModuleBaseDir(moduleBaseDir.toPath())
+                    .setLanguage("ruby")
+                    .setType(type)
+                    .build();
 
-        // set the corresponding file metadata and add to context file system
-        inputFile.initMetadata(new FileMetadata().readMetadata(inputFile.file(), Charsets.UTF_8));
-        context.fileSystem().add(inputFile);
+            inputFile.setMetadata(new FileMetadata().readMetadata(new FileReader(inputFile.absolutePath())));
+            context.fileSystem().add(inputFile);
 
-        return inputFile;
+            return inputFile;
+        } catch (Exception e) {
+            fail("File for test does not exist.");
+        }
+        return null;
     }
 
     private List<Issue> getRubocopRelatedIssues() {

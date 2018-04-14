@@ -4,6 +4,8 @@ import com.godaddy.sonar.ruby.RubyPlugin;
 import org.junit.Before;
 import org.junit.Test;
 import org.sonar.api.config.Settings;
+import org.sonar.api.config.PropertyDefinition;
+import org.sonar.api.config.internal.MapSettings;
 
 import java.util.List;
 
@@ -13,12 +15,12 @@ import static org.junit.Assert.*;
  * Created by sergio on 3/27/17.
  */
 public class DefaultCoverageSettingsTest {
-    private Settings settings;
+    private MapSettings settings;
     private DefaultCoverageSettings defaultCoverageSettings;
 
     @Before
     public void setUp() throws Exception {
-        this.settings = new Settings();
+        this.settings = new MapSettings();
         this.defaultCoverageSettings = new DefaultCoverageSettings(settings);
     }
 
